@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    background: gray;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card img{
+    width: 100%;
+}
