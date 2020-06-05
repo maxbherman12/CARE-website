@@ -2,7 +2,7 @@ import React from 'react';
 import './card.styles.css';
 
 const Card = ({websiteLink, imageLink, name}) => (
-    <a href={websiteLink} target='_blank'>
+    <a href={websiteLink} target='_blank' rel="noopener noreferrer">
         <div className='card'>
             <h1>{name}</h1>
             <img src={imageLink} alt={name} />
