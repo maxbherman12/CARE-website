@@ -1,11 +1,11 @@
 import React from 'react';
 import './card.styles.css';
 
-const Card = ({websiteLink, imageLink, name}) => (
-    <a href={websiteLink} target='_blank' rel="noopener noreferrer">
+const Card = ({properties}) => (
+    <a href={properties.source} target='_blank' rel="noopener noreferrer">
         <div className='card'>
-            <h1>{name}</h1>
-            <img src={imageLink} alt={name} />
+            <h1>{properties.name}</h1>
+            <img src={properties.img} alt={properties.name} />
         </div>
     </a>
 )

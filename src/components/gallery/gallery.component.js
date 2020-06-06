@@ -1,31 +1,84 @@
 import React from 'react'
 import './gallery.styles.css'
 
-import CardList from '../../components/card-list/card-list.component'
+import Card from '../card/card.component'
 
 import LeftArrow from './left arrow.png'
 import RightArrow from './right arrow.png'
 
-const Gallery = ({data}) =>{
-    function handleLeftClick(){
-        document.getElementsByClassName("clist")
+class Gallery extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            properties: this.props.data,
+            property: this.props.data[1],
+            leftbound: false,
+            rightbound: false
+        }
+        this.prevProperty = this.prevProperty.bind(this)
+        this.nextProperty = this.nextProperty.bind(this)
     }
 
-    return(
-        <div className='gallery'>
-            <div className='img-container left alive' onClick={handleLeftClick}>
-                <img src={LeftArrow}/>
-            </div>
-            <div className='wrapper'>
-                <div className='clist'>
-                    <CardList data={data}/>
+    prevProperty = () => {
+        let currIndex = this.state.property.index;
+        if(currIndex > 0){
+            const newIndex = currIndex-1;
+            this.setState({
+                property: this.props.data[newIndex],
+                rightbound: false
+            })
+        }
+        if(currIndex===1){
+            this.setState({leftbound: true})
+        }
+        
+    }
+
+    nextProperty = () => {
+        let currIndex = this.state.property.index;
+        if(currIndex < this.state.properties.length-3){
+            const newIndex = this.state.property.index+1;
+            this.setState({
+                property: this.props.data[newIndex],
+                leftbound: false
+            })
+        }
+        if(currIndex===this.state.properties.length-4){
+            this.setState({rightbound: true})
+        }
+    }
+
+    render(){
+        const {properties, property} = this.state;
+        return(
+            <div className="gallery">
+                <div 
+                    className={`arrow ${this.state.leftbound ? "disabled" : ""}`}
+                    id="left"
+                    onClick={() => this.prevProperty()} 
+                    >
+                        <img src={LeftArrow} alt=""/>
+                </div>
+                <div className="card-slider">
+                    <div className="card-slider-wrapper" style={{
+                        'transform': `translateX(-${property.index*280}px)` 
+                    }}>
+                        {
+                            properties.map(property => <Card properties={property} />)
+                        }
+                    </div>
+                </div>
+                <div 
+                    className={`arrow ${this.state.rightbound ? "disabled" : ""}`}
+                    id="right"
+                    onClick={() => this.nextProperty()} 
+                    disabled={property.index === 0}
+                    >
+                        <img src={RightArrow} alt=""/>
                 </div>
             </div>
-            <div className='img-container right alive'>
-                <img src={RightArrow}/>
-            </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default Gallery;
