@@ -50,6 +50,8 @@ class Gallery extends React.Component{
 
     render(){
         const {properties, property} = this.state;
+        const totalCardWidth = 380;
+        const numCardsInGallery = 3;
         return(
             <div className="gallery">
                 <div 
@@ -59,10 +61,18 @@ class Gallery extends React.Component{
                     >
                         <img src={LeftArrow} alt=""/>
                 </div>
-                <div className="card-slider">
-                    <div className="card-slider-wrapper" style={{
-                        'transform': `translateX(-${property.index*280}px)` 
-                    }}>
+                <div
+                    className="card-slider"
+                    style={{
+                        'max-width': `${totalCardWidth*numCardsInGallery}px`
+                        }}
+                    >
+                    <div 
+                        className="card-slider-wrapper"
+                        style={{
+                        'transform': `translateX(-${property.index*totalCardWidth}px)`
+                        }}
+                    >
                         {
                             properties.map(property => <Card properties={property} />)
                         }
