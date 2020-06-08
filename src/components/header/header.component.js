@@ -5,22 +5,24 @@ import {Link} from 'react-router-dom'
 
 const Header = () => (
     <div className='header'>
+        <div className="logo-container">
+                <Link className='option' to='/'>
+                    HOME LOGO
+                </Link>
+        </div>
         <div className='options'>
-            <Link className='option' to='/mission'>
-                OUR MISSION
-            </Link>
-            <Link className='option' to='/event'>
-                EVENT
-            </Link>
-            <Link className='option' to='/'>
-                HOME
-            </Link>
-            <Link className='option' to='/donate'>
-                DONATE
-            </Link>
-            <Link className='option' to='/contact'>
-                CONTACT US
-            </Link>
+                <Link className='option' id='learn' to='/learn'>
+                    LEARN
+                </Link>
+                <Link className='option' to='/donate'>
+                    DONATE
+                </Link>
+                <Link className='option' to='/contact'>
+                    CONTACT
+                </Link>
+        </div>
+        <div className="dropdown">
+
         </div>
     </div>
 )

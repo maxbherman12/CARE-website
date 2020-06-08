@@ -9,20 +9,25 @@
     top: 0px;
     position: fixed;
     z-index: 3;
-    border-bottom: white 2px solid;
+    border-bottom: #4a41a7 3px solid;
+}
+
+.logo-container{
+    width: 20%;
+    height: 100%;
 }
 
 .header .options{
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 50px;
 }
 
 .header .options .option{
-    margin: 0 20px;
+    margin: 0 50px;
     font-size: 20px;
     text-decoration: none;
     font-weight: 500;
@@ -34,4 +39,17 @@
 .header .options .option:hover{
     opacity: 1;
     transform: scale(1.005);
+}
+
+#learn:hover .header.dropdown{
+    background-color: red;
+}
+
+.dropdown{
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    background: lightgreen;
+    top: 70px;
+    right: 470px;
 }
