@@ -6,23 +6,29 @@ import {Link} from 'react-router-dom'
 const Header = () => (
     <div className='header'>
         <div className="logo-container">
-                <Link className='option' to='/'>
-                    HOME LOGO
+                <Link to='/'>
+                    <br />
+                    insert logo here which links to home page
                 </Link>
         </div>
         <div className='options'>
-                <Link className='option' id='learn' to='/learn'>
+            <div className="option" id='learn'>
+                <Link className='link' to='/learn'>
                     LEARN
                 </Link>
-                <Link className='option' to='/donate'>
+                <div className="dropdown">
+                </div>
+            </div>
+            <div className="option">
+                <Link className='link' to='/donate'>
                     DONATE
                 </Link>
-                <Link className='option' to='/contact'>
+            </div>
+            <div className="option">
+                <Link className='link' to='/contact'>
                     CONTACT
                 </Link>
-        </div>
-        <div className="dropdown">
-
+            </div>
         </div>
     </div>
 )

@@ -1,11 +1,11 @@
 import React from 'react'
 import './contact.styles.css'
 
-import CustomInput from '../../components/custom-input/custom-input.component'
+import ContactForm from '../../components/contact-form/contact-form.component'
 
 const ContactPage = () => (
     <div className='contact'>
-        <CustomInput text='Email Address' type='email'/>
+        <ContactForm />
     </div>
 )
 

@@ -4,7 +4,7 @@
     display: flex;
     justify-items: flex-end;
     align-items: center;
-    background: linear-gradient(to top, #121230, #201b58, #0f0c29);
+    background: linear-gradient(to top, #27278d, #251a9c, #191164);
     opacity: .98;
     top: 0px;
     position: fixed;
@@ -15,6 +15,9 @@
 .logo-container{
     width: 20%;
     height: 100%;
+    text-align: center;
+    border-right: 1px white dotted;
+    padding: 0 20px;
 }
 
 .header .options{
@@ -26,30 +29,43 @@
     padding: 0 50px;
 }
 
-.header .options .option{
+.option{
+    width: 200px;
+    text-align: center;
+}
+
+.link{
     margin: 0 50px;
     font-size: 20px;
     text-decoration: none;
     font-weight: 500;
     color:white;
-    opacity: .7;
+    opacity: .8;
     transition: ease-in .2s;
 }
 
-.header .options .option:hover{
+.link:hover{
     opacity: 1;
     transform: scale(1.005);
 }
 
-#learn:hover .header.dropdown{
-    background-color: red;
+.dropdown{
+    margin-top: 25px;
+    position: absolute;
+    width: 250px;
+    height: 0px;
+    background: gray;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
-.dropdown{
-    position: absolute;
-    width: 200px;
-    height: 10px;
-    background: lightgreen;
-    top: 70px;
-    right: 470px;
+#learn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#learn .link:hover + .dropdown, .dropdown:hover{
+    height: 300px;
+    opacity: .95;
 }
