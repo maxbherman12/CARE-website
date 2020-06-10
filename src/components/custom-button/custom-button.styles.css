@@ -1,6 +1,6 @@
 .custom-button {
     --main-color: black;
-    --focus-color: #0e2796;
+    --focus-color: var(--highlight-color);
     min-width: 165px;
     width: auto;
     height: 50px;
@@ -16,6 +16,7 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .custom-button:hover {
