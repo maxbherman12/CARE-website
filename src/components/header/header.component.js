@@ -6,9 +6,9 @@ import {Link} from 'react-router-dom'
 const Header = () => (
     <div className='header'>
         <div className="logo-container">
-                <Link to='/'>
+                <Link to='/' style={{"color": "white"}}>
                     <br />
-                    insert logo here which links to home page
+                    INSERT LOGO
                 </Link>
         </div>
         <div className='options'>

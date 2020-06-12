@@ -5,6 +5,8 @@
     border: black 2px solid;
     border-radius: 10px;
     display: flex;
+    position: fixed;
+    top: 22%;
 }
 
 .expanded-img-container{
@@ -23,6 +25,7 @@
     width: 50%;
     height: 100%;
     position: relative;
+    color: white;
 }
 
 .expanded-card-content .exit-container{

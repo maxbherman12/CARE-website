@@ -23,16 +23,16 @@ class LearnCard extends React.Component{
         const {data} = this.state
         return(
             <div className='learn-card-container' onClick={!this.state.expanded ? this.toggleExpand : null}>
-                <div className="learn-card">
+                <div className={`learn-card ${this.state.expanded ? "expanded" : ""}`}>
                     <div className='img-container'>
                         <img src={data.img} alt=""/>
                     </div>
                     <div className='title-container'>
                         <span>{data.name}</span>
                     </div>
-                    <div className={`expanded-container ${this.state.expanded ? "true" : "false"}`}>
+                </div>
+                <div className={`expanded-container ${this.state.expanded ? "true" : "false"}`}>
                         <ExpandedLearnCard toggle={this.toggleExpand} property={data}/>
-                    </div>
                 </div>
             </div>
         )

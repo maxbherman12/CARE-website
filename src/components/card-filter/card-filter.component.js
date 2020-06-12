@@ -13,7 +13,7 @@ class CardFilter extends React.Component{
     }
     render(){
         const {properties} = this.state
-        const filteredCardList = properties.filter(prop => (prop.type === this.state.requestedType) || true)
+        const filteredCardList = properties.filter(prop => (prop.type === this.state.requestedType))
         return(
             <div className="card-filter">
                 {

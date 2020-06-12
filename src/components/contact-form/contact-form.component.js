@@ -1,55 +1,30 @@
-import React from 'react'
-import './contact-form.styles.css'
-
-import CustomButton from '../custom-button/custom-button.component' 
+import React from 'react';
+import emailjs from 'emailjs-com';
 
 class ContactForm extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            name: '',
-            subject: '',
-            email: '',
-            message: ''
-        }
 
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
+    sendEmail(e) {
+        e.preventDefault();
+        /* emailjs.sendForm('gmail', 'template_SYvZvBnN', e.target, 'user_U8u5G9v2HcZ6gyV8weBYB')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        }); */  
     }
-
-    handleChange(event){
-        this.setState({
-            [event.target.name]: event.target.value
-        });
-    }
-
-    handleSubmit(event){
-        const {name, subject, email, message} = this.state;
-        console.log('hi')
-    }
-
     render(){
-        return(
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    Name:
-                    <input name='name' onChange={this.handleChange} required/>
-                </label>
-                <label>
-                    Email:
-                    <input type='email' name='email' onChange={this.handleChange} required/>
-                </label>
-                <label>
-                    Subject:
-                    <input name='subject' onChange={this.handleChange} required/>
-                </label>
-                <label>
-                    Message:
-                    <textarea name='message' onChange={this.handleChange} required></textarea>
-                </label>
-                <CustomButton inverted type='submit'>Send</CustomButton>      
-            </form>
-        )
+        return (
+          <form className="contact-form" onSubmit={this.sendEmail}>
+            <input type="hidden" name="contact_number" required/>
+            <label >Name</label>
+            <input type="text" name="from_name" required/>
+            <label>Email</label>
+            <input type="email" name="user_email" required/>
+            <label>Message</label>
+            <textarea name="message_html" />
+            <input type="submit" value="Send" />
+          </form>
+        );
     }
 }
 
