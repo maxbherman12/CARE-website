@@ -1,11 +1,13 @@
 import React from 'react'
 import './learn.styles.css'
 
-import LearnCard from '../../components/learn-card/learn-card.component'
+import CardFilter from '../../components/card-filter/card-filter.component'
+
+import LEARN_DATA from '../../learn-data'
 
 const LearnPage = () => (
     <div className="learn-page">
-        <LearnCard />
+        <CardFilter data={LEARN_DATA}/>
     </div>
 )
 

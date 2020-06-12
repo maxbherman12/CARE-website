@@ -16,8 +16,8 @@ const Header = () => (
                 <Link className='link' to='/learn'>
                     LEARN
                 </Link>
-                <div className="dropdown">
-                </div>
+                {/* <div className="dropdown">
+                </div> */}
             </div>
             <div className="option">
                 <Link className='link' to='/donate'>
