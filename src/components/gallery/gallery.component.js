@@ -64,7 +64,7 @@ class Gallery extends React.Component{
                 <div
                     className="card-slider"
                     style={{
-                        'max-width': `${totalCardWidth*numCardsInGallery}px`
+                        'maxWidth': `${totalCardWidth*numCardsInGallery}px`
                         }}
                     >
                     <div 
@@ -74,7 +74,7 @@ class Gallery extends React.Component{
                         }}
                     >
                         {
-                            properties.map(property => <Card properties={property} />)
+                            properties.map(property => <Card key={property.index} properties={property} />)
                         }
                     </div>
                 </div>

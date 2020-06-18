@@ -4,12 +4,11 @@
     display: flex;
     justify-items: flex-end;
     align-items: center;
-    background: linear-gradient(to top, #27278d, #251a9c, #191164);
+    background: linear-gradient(to bottom, #5A5560, #333);
     opacity: .98;
     top: 0px;
     position: fixed;
     z-index: 3;
-    border-bottom: #4a41a7 3px solid;
 }
 
 .logo-container{

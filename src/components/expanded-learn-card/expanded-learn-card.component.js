@@ -20,7 +20,7 @@ const ExpandedLearnCard = ({toggle, property}) => {
                     <p>{property.summary}</p>
                 </div>
                 <div className="button-container">
-                    <a href={property.link} target='_blank'>
+                    <a href={property.link} target='_blank' rel="noopener noreferrer">
                         <CustomButton inverted>Learn More</CustomButton>
                     </a>
                 </div>

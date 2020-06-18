@@ -1,8 +1,41 @@
 .learn-page{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 100px;
     min-height: 100vh;
     position: relative;
+    color: black;
+}
+
+.sidebar{
+    min-width: 10%;
+    height: 40%;
+    padding: 1%;
+    position: fixed;
+    left: 0;
+    top: 200px;
+    border: black solid 1px;
+    border-radius: 5px;
+    border-left: none;
+    background: #8370609f;
+}
+
+.sidebar p{
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkboxes input{
+    margin-right: 5px;
+}
+
+.error-msg{
+    position: absolute;
+    top: 40%;
 }
