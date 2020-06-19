@@ -1,6 +1,17 @@
 .filtered-cards{
-    padding: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px 100px;
+}
+
+@media screen and (max-width: 1200px){
+    .filtered-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .filtered-cards{
+        grid-template-columns: 1fr;
+    }
 }

@@ -56,14 +56,16 @@ class LearnPage extends React.Component{
                         </label>
                     </div>
                 </div>
-                {
-                    filteredCardList.length > 0 ?
-                    <CardFilter filteredList={filteredCardList}/>
-                    :
-                    <div className="error-msg">
-                        <p>There is no data available with the selected parameters. Please broaden your search.</p>
-                    </div>
-                }
+                <div className="filtered-card-list">
+                    {
+                        filteredCardList.length > 0 ?
+                        <CardFilter filteredList={filteredCardList}/>
+                        :
+                        <div className="error-msg">
+                            <p>There is no data available with the selected parameters. Please broaden your search.</p>
+                        </div>
+                    }
+                </div>
             </div>    
         )
     }

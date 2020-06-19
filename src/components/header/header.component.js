@@ -5,31 +5,32 @@ import {Link} from 'react-router-dom'
 
 const Header = () => (
     <div className='header'>
-        <div className="logo-container">
-                <Link to='/' style={{"color": "white"}}>
-                    <br />
-                    INSERT LOGO
-                </Link>
-        </div>
-        <div className='options'>
-            <div className="option" id='learn'>
-                <Link className='link' to='/learn'>
-                    LEARN
-                </Link>
-                {/* <div className="dropdown">
-                </div> */}
+        <nav>
+            <div className="logo-container">
+                    <Link to='/' style={{"color": "white"}}>
+                        <p>HOME</p>
+                    </Link>
             </div>
-            <div className="option">
-                <Link className='link' to='/donate'>
-                    DONATE
-                </Link>
+            <div className='options'>
+                <div className="option" id='learn'>
+                    <Link className='link' to='/learn'>
+                        LEARN
+                    </Link>
+                    {/* <div className="dropdown">
+                    </div> */}
+                </div>
+                <div className="option">
+                    <Link className='link' to='/donate'>
+                        DONATE
+                    </Link>
+                </div>
+                <div className="option">
+                    <Link className='link' to='/contact'>
+                        CONTACT
+                    </Link>
+                </div>
             </div>
-            <div className="option">
-                <Link className='link' to='/contact'>
-                    CONTACT
-                </Link>
-            </div>
-        </div>
+        </nav>
     </div>
 )
 
