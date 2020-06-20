@@ -1,4 +1,6 @@
 import React from 'react';
+import './contact-form.styles.css'
+
 import emailjs from 'emailjs-com';
 
 import CustomButton from '../custom-button/custom-button.component'
@@ -42,6 +44,7 @@ class ContactForm extends React.Component{
         return (
           <form className="contact-form" onSubmit={this.sendEmail}>
             <input type="hidden" name="contact_number" required/>
+            <h1 id='title'> Contact Us </h1>
             <label >Name</label>
             <input 
                 type="text"
@@ -65,6 +68,7 @@ class ContactForm extends React.Component{
                 onChange={this.handleChange}
                 required
             />
+            <br />
             <CustomButton type='submit'>SUBMIT</CustomButton>
           </form>
         );

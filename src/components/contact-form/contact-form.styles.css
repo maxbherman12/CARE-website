@@ -1,4 +1,19 @@
 form{
     display: flex;
     flex-direction: column;
+    margin-top: center;
+    width: 30%;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    border: solid #c9b9ab 10px;
+    background-color: #c9b9ab;
+    padding: 8px;
+    font-size: large;
+    font-weight: 500;
+}
+
+#title{
+text-align: center;
+font-size: x-large;
+font-weight: 1000;
 }
