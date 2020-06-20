@@ -17,18 +17,19 @@
     border: black solid 1px;
     border-radius: 5px;
     border-left: none;
-    background: #837060e5;
+    background: var(--color4);
 }
 
 .sidebar p{
     text-decoration: underline;
     cursor: pointer;
-    color: blue;
+    color: var(--highlight-color);
 }
 
 .checkboxes{
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .checkboxes input{
@@ -36,12 +37,12 @@
 }
 
 .filtered-card-list{
-    padding: 10vw;
+    padding: 5vw;
 }
 
 .error-msg{
-    position: absolute;
-    top: 40%;
+    text-align: center;
+    padding: 30% 10%;
 }
 
 @media screen and (max-width: 1200px){
@@ -58,5 +59,8 @@
         flex-direction: row;
         flex: 4;
         justify-content: space-evenly;
+    }
+    .filtered-card-list{
+        padding: 10vh;
     }
 }

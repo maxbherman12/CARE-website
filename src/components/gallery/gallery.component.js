@@ -50,8 +50,7 @@ class Gallery extends React.Component{
 
     render(){
         const {properties, property} = this.state;
-        const totalCardWidth = 380;
-        const numCardsInGallery = 3;
+        const totalCardWidth = 330;
         return(
             <div className="gallery">
                 <div 
@@ -61,12 +60,7 @@ class Gallery extends React.Component{
                     >
                         <img src={LeftArrow} alt=""/>
                 </div>
-                <div
-                    className="card-slider"
-                    style={{
-                        'maxWidth': `${totalCardWidth*numCardsInGallery}px`
-                        }}
-                    >
+                <div className="card-slider">
                     <div 
                         className="card-slider-wrapper"
                         style={{

@@ -7,7 +7,7 @@ import Gallery from '../../components/gallery/gallery.component';
 import DONATE_DATA from '../../donate-data'
 
 const DonatePage = () => (
-    <div className='page'>
+    <div className='donate-page'>
         <h1>Where we will be donating the money</h1>
         <span>Click on the cards to learn more!</span>
         <Gallery data={DONATE_DATA} />

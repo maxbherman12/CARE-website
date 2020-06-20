@@ -21,7 +21,7 @@ const ExpandedLearnCard = ({toggle, property}) => {
                 </div>
                 <div className="button-container">
                     <a href={property.link} target='_blank' rel="noopener noreferrer">
-                        <CustomButton inverted>Learn More</CustomButton>
+                        <CustomButton>Learn More</CustomButton>
                     </a>
                 </div>
             </div>

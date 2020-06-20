@@ -65,7 +65,7 @@ class ContactForm extends React.Component{
                 onChange={this.handleChange}
                 required
             />
-            <CustomButton inverted type='submit'>SUBMIT</CustomButton>
+            <CustomButton type='submit'>SUBMIT</CustomButton>
           </form>
         );
     }
