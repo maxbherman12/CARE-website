@@ -21,8 +21,12 @@ nav{
     height: 100%;
     text-align: left;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     font-size: 20px;
+}
+
+.logo-container img{
+    height: 8vh;
 }
 
 .header .options{
@@ -39,7 +43,7 @@ nav{
 }
 
 .link{
-    font-size: 20px;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: 500;
     color: var(--color5);
@@ -74,6 +78,10 @@ nav{
 }
 
 @media screen and (max-width: 500px){
+    nav{
+        width: 100%;
+    }
+    
     .link{
         font-size: 16px;
     }

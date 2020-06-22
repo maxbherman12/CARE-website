@@ -6,3 +6,8 @@
     text-align: center;
     overflow: hidden;
 }
+
+.donate-page .info{
+    font-size: 1.5rem;
+    padding: 1rem 15rem;
+}

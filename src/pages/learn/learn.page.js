@@ -4,18 +4,18 @@ import './learn.styles.css'
 import Tabletop from 'tabletop'
 
 import CardFilter from '../../components/card-filter/card-filter.component'
-
-import LEARN_DATA from '../../learn-data'
+import LoadingAnimation from '../../components/loading-animation/loading-animation.component'
 
 class LearnPage extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            properties: LEARN_DATA,
-            Book: true,
-            Article: true,
-            Letter: true,
-            Film: true
+            properties: [],
+            all: true,
+            Book: false,
+            Article: false,
+            Film: false,
+            Other: false
         }
     }
 
@@ -23,7 +23,7 @@ class LearnPage extends React.Component{
         Tabletop.init({
             key: '1dNQ5cL6z_y83_VKHmdVWSjmXS1u8gnVp_i1NqQTjAaA',
             callback: googleData => {
-            this.setState({properties: this.state.properties.concat(googleData)}, () => console.log(this.state.properties))
+            this.setState({properties: this.state.properties.concat(googleData.sort(() => Math.random() - 0.5))})
             }, 
             simpleSheet: true
         })
@@ -31,63 +31,56 @@ class LearnPage extends React.Component{
 
     render(){
         const {properties} = this.state
-        const filteredCardList = properties.filter(prop => (this.state[prop.type]))
+        const filteredCardList = properties.filter(prop => (this.state[prop.type]) || this.state.all)
         return(
             <div className="learn-page">
-                <div className="sidebar">
-                    <p
-                        onClick={() => this.setState({
+                <div className="learn-options">
+                    <a href="#" className={this.state.all ? "selected" : ""} onClick={() => this.setState({
+                            all: true,
+                            Book: false,
+                            Article: false,
+                            Other: false,
+                            Film: false
+                        })}>View All</a>
+                    <a href="#" className={this.state.Book ? "selected" : ""} onClick={() => this.setState({
+                            all: false,
                             Book: true,
+                            Article: false,
+                            Other: false,
+                            Film: false
+                        })}>Books</a>
+                    <a href="#" className={this.state.Article ? "selected" : ""} onClick={() => this.setState({
+                            all: false,
+                            Book: false,
                             Article: true,
-                            Letter: true,
+                            Other: false,
+                            Film: false
+                        })}>Articles</a>
+                    <a href="#" className={this.state.Film ? "selected" : ""} onClick={() => this.setState({
+                            all: false,
+                            Book: false,
+                            Article: false,
+                            Other: false,
                             Film: true
-                        })}>
-                        Select All
-                    </p>
-                    {/* <CustomCheckbox text='Click' /> */}
-                    <div className="checkboxes">
-                        <label>
-                            <input
-                                type="checkbox"
-                                checked={this.state.Book}
-                                onChange={() => this.setState({Book: !this.state.Book})}
-                            />
-                            Books
-                        </label>
-                        <label>
-                            <input
-                                type="checkbox"
-                                checked={this.state.Article}
-                                onChange={() => this.setState({Article: !this.state.Article})}
-                            />
-                            Articles
-                        </label>
-                        <label>
-                            <input
-                                type="checkbox"
-                                checked={this.state.Letter}
-                                onChange={() => this.setState({Letter: !this.state.Letter})}
-                            />
-                            Letters
-                        </label>
-                        <label>
-                            <input
-                                type="checkbox"
-                                checked={this.state.Film}
-                                onChange={() => this.setState({Film: !this.state.Film})}
-                            />
-                            Films
-                        </label>
-                    </div>
+                        })}>Films</a>
+                    <a href="#" className={this.state.Other ? "selected" : ""} onClick={() => this.setState({
+                            all: false,
+                            Book: false,
+                            Article: false,
+                            Other: true,
+                            Film: false
+                        })}>Other</a>
+                    <div className="animation start-home"></div>
                 </div>
                 <div className="filtered-card-list">
                     {
                         filteredCardList.length > 0 ?
                         <CardFilter filteredList={filteredCardList}/>
                         :
-                        <div className="error-msg">
-                            <p>There is no data available with the selected parameters. Please broaden your search.</p>
-                        </div>
+                        <LoadingAnimation />
+                        // <div className="error-msg">
+                        //     <p>There is no data available with the selected parameters. Please broaden your search.</p>
+                        // </div>
                     }
                 </div>
             </div>    

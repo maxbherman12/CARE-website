@@ -4,14 +4,12 @@ import './donate.styles.css';
 import CustomButton from '../../components/custom-button/custom-button.component'
 import Gallery from '../../components/gallery/gallery.component';
 
-import DONATE_DATA from '../../donate-data'
-
 const DonatePage = () => (
     <div className='donate-page'>
-        <h1>Where we will be donating the money</h1>
-        <span>Click on the cards to learn more!</span>
-        <Gallery data={DONATE_DATA} />
-        <p>Information about where the money is going</p>
+        <div className="info">
+            <h4>Donations will be distributed amongst all of the following national, state, and local organizations. Though the problem is dauntingly large, we believe starting here will have an immediate impact on Black Americans in both our community and around the nation. Click on the cards to learn more!</h4>
+        </div>
+        <Gallery />
         <CustomButton onClick={() => alert('Donated')}>DONATE NOW</CustomButton>
     </div>
 )

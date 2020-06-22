@@ -2,13 +2,14 @@ import React from 'react'
 import './header.styles.css'
 
 import {Link} from 'react-router-dom'
+import Logo from '../../s-l640.png'
 
 const Header = () => (
     <div className='header'>
         <nav>
             <div className="logo-container">
                     <Link to='/' style={{"color": "white"}}>
-                        <p>HOME</p>
+                        <img src={Logo} alt=""/>
                     </Link>
             </div>
             <div className='options'>

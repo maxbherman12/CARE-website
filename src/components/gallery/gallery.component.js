@@ -1,31 +1,45 @@
 import React from 'react'
 import './gallery.styles.css'
 
+import Tabletop from 'tabletop'
+
 import Card from '../card/card.component'
 
 import LeftArrow from './left arrow.png'
 import RightArrow from './right arrow.png'
 
+import DONATE_DATA from '../../donate-data'
+
 class Gallery extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            properties: this.props.data,
-            property: this.props.data[1],
-            leftbound: false,
+            properties: DONATE_DATA,
+            currIndex: 0,
+            leftbound: true,
             rightbound: false
         }
         this.prevProperty = this.prevProperty.bind(this)
         this.nextProperty = this.nextProperty.bind(this)
     }
 
+    componentDidMount() {
+        Tabletop.init({
+            key: '1g4g_NT8I7hXUIw5f0tb0UOGWXCFGwalNeE4s8DQVwLs',
+            callback: googleData => {
+            this.setState({properties: this.state.properties.concat(googleData)
+            })}, 
+            simpleSheet: true
+        })
+    }
+
     prevProperty = () => {
-        let currIndex = this.state.property.index;
+        const {currIndex} = this.state;
         if(currIndex > 0){
             const newIndex = currIndex-1;
             this.setState({
-                property: this.props.data[newIndex],
-                rightbound: false
+                rightbound: false,
+                currIndex: this.state.currIndex - 1
             })
         }
         if(currIndex===1){
@@ -35,12 +49,12 @@ class Gallery extends React.Component{
     }
 
     nextProperty = () => {
-        let currIndex = this.state.property.index;
+        const {currIndex} = this.state;
         if(currIndex < this.state.properties.length-3){
-            const newIndex = this.state.property.index+1;
+            const newIndex = this.state.currIndex+1;
             this.setState({
-                property: this.props.data[newIndex],
-                leftbound: false
+                leftbound: false,
+                currIndex: this.state.currIndex + 1
             })
         }
         if(currIndex===this.state.properties.length-4){
@@ -49,7 +63,7 @@ class Gallery extends React.Component{
     }
 
     render(){
-        const {properties, property} = this.state;
+        const {properties, currIndex} = this.state;
         const totalCardWidth = 330;
         return(
             <div className="gallery">
@@ -64,7 +78,7 @@ class Gallery extends React.Component{
                     <div 
                         className="card-slider-wrapper"
                         style={{
-                        'transform': `translateX(-${property.index*totalCardWidth}px)`
+                        'transform': `translateX(-${currIndex*totalCardWidth}px)`
                         }}
                     >
                         {
@@ -76,7 +90,6 @@ class Gallery extends React.Component{
                     className={`arrow ${this.state.rightbound ? "disabled" : ""}`}
                     id="right"
                     onClick={() => this.nextProperty()} 
-                    disabled={property.index === 0}
                     >
                         <img src={RightArrow} alt=""/>
                 </div>
