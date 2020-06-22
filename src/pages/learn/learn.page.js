@@ -1,6 +1,8 @@
 import React from 'react'
 import './learn.styles.css'
 
+import Tabletop from 'tabletop'
+
 import CardFilter from '../../components/card-filter/card-filter.component'
 
 import LEARN_DATA from '../../learn-data'
@@ -12,9 +14,21 @@ class LearnPage extends React.Component{
             properties: LEARN_DATA,
             Book: true,
             Article: true,
-            Letter: true
+            Letter: true,
+            Film: true
         }
     }
+
+    componentDidMount() {
+        Tabletop.init({
+            key: '1dNQ5cL6z_y83_VKHmdVWSjmXS1u8gnVp_i1NqQTjAaA',
+            callback: googleData => {
+            this.setState({properties: this.state.properties.concat(googleData)}, () => console.log(this.state.properties))
+            }, 
+            simpleSheet: true
+        })
+    }
+
     render(){
         const {properties} = this.state
         const filteredCardList = properties.filter(prop => (this.state[prop.type]))
@@ -25,10 +39,12 @@ class LearnPage extends React.Component{
                         onClick={() => this.setState({
                             Book: true,
                             Article: true,
-                            Letter: true
+                            Letter: true,
+                            Film: true
                         })}>
                         Select All
                     </p>
+                    {/* <CustomCheckbox text='Click' /> */}
                     <div className="checkboxes">
                         <label>
                             <input
@@ -53,6 +69,14 @@ class LearnPage extends React.Component{
                                 onChange={() => this.setState({Letter: !this.state.Letter})}
                             />
                             Letters
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                checked={this.state.Film}
+                                onChange={() => this.setState({Film: !this.state.Film})}
+                            />
+                            Films
                         </label>
                     </div>
                 </div>
