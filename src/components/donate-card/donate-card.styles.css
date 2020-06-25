@@ -102,3 +102,13 @@
         transform: scale(0.6);
     }
 }
+
+@media screen and (max-width: 400px){
+    .donate-card{
+        height: 30vh;
+    }
+    
+    .donate-card .img-container{
+        height: 30vh;
+    }
+}

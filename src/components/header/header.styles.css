@@ -31,7 +31,7 @@ nav{
 }
 
 .logo-container img:hover{
-    -webkit-filter: sepia() saturate(800%);
+    -webkit-filter: sepia() saturate(700%);
 }
 
 .header .options{

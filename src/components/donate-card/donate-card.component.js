@@ -19,8 +19,8 @@ const DonateCard = ({property}) => {
                     </p>
                 </div>
                 <div className="button">
-                    <a href={property.link} target='_blank' rel="noopener noreferrer">
-                        <CustomButton altcolor>Learn More</CustomButton>
+                    <a href={property.source} target='_blank' rel="noopener noreferrer">
+                        <CustomButton >Learn More</CustomButton>
                     </a>
                 </div>
             </div>

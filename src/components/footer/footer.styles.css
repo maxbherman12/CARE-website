@@ -2,4 +2,39 @@
     min-height: 10vh;
     background: var(--color3);
     opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social-media-links{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    filter: invert(1);
+}
+
+.footer .social-media-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .social-media-links a:hover{
+    opacity: 0.8;
+}
+
+.footer .social-media-links span{
+    color: black;
+}
+
+.footer .social-media-links img{
+    height: 5vh;
+    margin-right: 1vw;
+}
+
+@media screen and (max-width: 750px){
+    .footer span{
+        display: none;
+    }
 }
