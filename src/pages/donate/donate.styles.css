@@ -5,9 +5,14 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
+    animation: fadeIn 2s ease 0s forwards;
 }
 
 .donate-page .info{
     font-size: 1.5rem;
     padding: 1rem 15rem;
+}
+
+.donate-page .button-container{
+    margin: 5vh;
 }

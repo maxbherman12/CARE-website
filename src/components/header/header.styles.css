@@ -7,11 +7,12 @@
     position: fixed;
     z-index: 3;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 nav{
-    width: 80%;
+    width: 90%;
+    padding-left: 5%;
     display: flex;
     position: relative;
 }
@@ -29,6 +30,10 @@ nav{
     height: 8vh;
 }
 
+.logo-container img:hover{
+    -webkit-filter: sepia() saturate(800%);
+}
+
 .header .options{
     flex: 3;    
     height: 100%;
@@ -38,7 +43,7 @@ nav{
 }
 
 .option{
-    width: 100px;
+    /* width: 100px; */
     text-align: center;
 }
 
@@ -56,33 +61,23 @@ nav{
     color: var(--highlight-color);
 }
 
-.dropdown{
-    margin-top: 25px;
-    position: absolute;
-    width: 250px;
-    height: 0px;
-    background: gray;
-    opacity: 0;
-    transition: all 0.5s ease;
+@media screen and (max-width: 1200px){
+    .header .options{
+        flex: 7;
+    }
 }
 
-#learn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#learn .link:hover + .dropdown, .dropdown:hover{
-    height: 300px;
-    opacity: .95;
-}
-
-@media screen and (max-width: 500px){
+@media screen and (max-width: 750px){
     nav{
-        width: 100%;
+        width: 95%;
+        padding: 0;
     }
     
     .link{
         font-size: 16px;
+    }
+
+    .header .options{
+        flex: 15;
     }
 }

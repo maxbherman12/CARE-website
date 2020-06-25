@@ -8,6 +8,7 @@ import HomePage from './pages/home/home.page'
 import LearnPage from './pages/learn/learn.page'
 import DonatePage from './pages/donate/donate.page'
 import ContactPage from './pages/contact/contact.page'
+import Footer from './components/footer/footer.component'
 
 class App extends React.Component{
   constructor(){
@@ -29,6 +30,7 @@ class App extends React.Component{
             <Route path='/contact' component={ContactPage} />
           </Switch>
         </div>
+        <Footer />
       </div>
     );
   }

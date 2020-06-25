@@ -14,7 +14,7 @@ class LearnPage extends React.Component{
             all: true,
             Book: false,
             Article: false,
-            Film: false,
+            Video: false,
             Other: false
         }
     }
@@ -40,35 +40,35 @@ class LearnPage extends React.Component{
                             Book: false,
                             Article: false,
                             Other: false,
-                            Film: false
+                            Video: false
                         })}>View All</a>
                     <a href="#" className={this.state.Book ? "selected" : ""} onClick={() => this.setState({
                             all: false,
                             Book: true,
                             Article: false,
                             Other: false,
-                            Film: false
+                            Video: false
                         })}>Books</a>
                     <a href="#" className={this.state.Article ? "selected" : ""} onClick={() => this.setState({
                             all: false,
                             Book: false,
                             Article: true,
                             Other: false,
-                            Film: false
+                            Video: false
                         })}>Articles</a>
-                    <a href="#" className={this.state.Film ? "selected" : ""} onClick={() => this.setState({
+                    <a href="#" className={this.state.Video ? "selected" : ""} onClick={() => this.setState({
                             all: false,
                             Book: false,
                             Article: false,
                             Other: false,
-                            Film: true
-                        })}>Films</a>
+                            Video: true
+                        })}>Videos</a>
                     <a href="#" className={this.state.Other ? "selected" : ""} onClick={() => this.setState({
                             all: false,
                             Book: false,
                             Article: false,
                             Other: true,
-                            Film: false
+                            Video: false
                         })}>Other</a>
                     <div className="animation start-home"></div>
                 </div>

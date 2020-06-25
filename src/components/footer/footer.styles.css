@@ -1,0 +1,5 @@
+.footer{
+    min-height: 10vh;
+    background: var(--color3);
+    opacity: 0.8;
+}

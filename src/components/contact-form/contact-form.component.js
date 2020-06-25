@@ -1,10 +1,14 @@
-import React from 'react';
+import React from 'react'
 import './contact-form.styles.css'
 
 import emailjs from 'emailjs-com';
 
-import CustomButton from '../custom-button/custom-button.component'
+import EmailLogo from './imgs/mail.png'
+import InstagramLogo from './imgs/instagram.png'
+import FacebookLogo from './imgs/facebook.png'
+import TwitterLogo from './imgs/twitter.png'
 
+import CustomButton from '../../components/custom-button/custom-button.component'
 
 class ContactForm extends React.Component{
     constructor(props){
@@ -41,38 +45,68 @@ class ContactForm extends React.Component{
     }
 
     render(){
-        return (
-          <form className="contact-form" onSubmit={this.sendEmail}>
-            <input type="hidden" name="contact_number" required/>
-            <h1 id='title'> Contact Us </h1>
-            <label >Name</label>
-            <input 
-                type="text"
-                name="from_name"
-                value={this.state.from_name}
-                onChange={this.handleChange}
-                required
-            />
-            <label>Email</label>
-            <input
-                type="email"
-                name="user_email"
-                value={this.state.user_email}
-                onChange={this.handleChange}
-                required
-            />
-            <label>Message</label>
-            <textarea
-                name="message_html"
-                value={this.state.message_html}
-                onChange={this.handleChange}
-                required
-            />
-            <br />
-            <CustomButton type='submit'>SUBMIT</CustomButton>
+    return(
+        <div className="contact-form-container">
+            <div className="contactInfo">
+                <h2>Contact Info</h2>
+                <ul className='social-media-links'>
+                    <li><a href="yaari@gmail.com">
+                        <img src={EmailLogo} alt="insert"/>
+                        <span>yaari@gmail.com</span>
+                    </a></li>
+                    <li><a href="#">
+                        <img src={FacebookLogo} alt="social"/>
+                        <span>facebook.com/yaari</span>
+                    </a></li>
+                    <li><a href="#">
+                        <img src={InstagramLogo} alt="media"/>
+                        <span>@yaari</span>
+                    </a></li>
+                    <li><a href="#">
+                        <img src={TwitterLogo} alt="links"/>
+                        <span>@yaari</span>
+                    </a></li>
+                </ul>
+            </div>
+            <form className="contactForm" onSubmit={this.sendEmail}>
+                <h2>Send a Message</h2>
+                <input type="hidden" name="contact_number" required/>
+                <div className="formBox">
+                    <div className="inputBox w100">
+                        <input 
+                            type="text"
+                            name="from_name"
+                            value={this.state.from_name}
+                            onChange={this.handleChange}
+                            required
+                        />
+                        <span>Name</span>
+                    </div>
+                    <div className="inputBox w100">
+                        <input
+                            type="email"
+                            name="user_email"
+                            value={this.state.user_email}
+                            onChange={this.handleChange}
+                            required
+                        />
+                        <span>Email Address</span>
+                    </div>
+                    <div className="inputBox w100">
+                        <textarea
+                            name="message_html"
+                            value={this.state.message_html}
+                            onChange={this.handleChange}
+                            required
+                        ></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <CustomButton type='submit' border>Send</CustomButton>
+                </div>
           </form>
-        );
-    }
+        </div>
+    )
+}
 }
 
 export default ContactForm;

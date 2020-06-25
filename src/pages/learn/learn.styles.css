@@ -6,6 +6,7 @@
     min-height: 90vh;
     position: relative;
     color: black;
+    animation: fadeIn 0.5s ease 0s forwards;
 }
 
 .filtered-card-list{

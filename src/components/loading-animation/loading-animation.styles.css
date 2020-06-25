@@ -5,6 +5,7 @@
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
+    --load-color: var(--highlight-color)
 }
 
 .wrapper span{
@@ -16,7 +17,7 @@
     height:20px;
     position: absolute;
     border-radius: 50%;
-    background-color: var(--color5);
+    background-color: var(--load-color);
     left:15%;
     transform-origin: 50%;
     animation: circle .5s alternate infinite ease;
@@ -90,7 +91,7 @@
     letter-spacing: 1px;
     font-family: 'Lato';
     font-size: 20px;
-    color: var(--color5);
+    color: var(--load-color);
 }
 
 @media screen and (max-width: 550px){

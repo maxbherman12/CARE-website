@@ -4,6 +4,7 @@ import './gallery.styles.css'
 import Tabletop from 'tabletop'
 
 import Card from '../card/card.component'
+import DonateCard from '../donate-card/donate-card.component'
 
 import LeftArrow from './left arrow.png'
 import RightArrow from './right arrow.png'
@@ -64,7 +65,7 @@ class Gallery extends React.Component{
 
     render(){
         const {properties, currIndex} = this.state;
-        const totalCardWidth = 330;
+        const totalCardWidth = 740;
         return(
             <div className="gallery">
                 <div 
@@ -78,11 +79,11 @@ class Gallery extends React.Component{
                     <div 
                         className="card-slider-wrapper"
                         style={{
-                        'transform': `translateX(-${currIndex*totalCardWidth}px)`
+                        'transform': `translateX(-${currIndex*37}vw)`
                         }}
                     >
                         {
-                            properties.map(property => <Card key={property.index} properties={property} />)
+                            properties.map(property => <DonateCard key={property.index} property={property} />)
                         }
                     </div>
                 </div>
@@ -92,6 +93,11 @@ class Gallery extends React.Component{
                     onClick={() => this.nextProperty()} 
                     >
                         <img src={RightArrow} alt=""/>
+                </div>
+                <div className="alt-gallery">
+                    {
+                        properties.map(property => <DonateCard key={property.index} property={property} />)
+                    }
                 </div>
             </div>
         )
