@@ -55,7 +55,7 @@
   
   .contact-form-container .contactInfo .social-media-links img{
     width: 20%;
-    margin-right: 5%;
+    margin-right: 3%;
   }
 
   .contact-form-container .contactForm{
@@ -68,7 +68,6 @@
     color: var(--color5);
     border-radius: 10px;
     border: 3px solid var(--color5);
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;

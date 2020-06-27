@@ -8,17 +8,17 @@
 }
 
 .home .page{
-    height: 90vh;
     min-width: 100vw;
+    min-height: 90vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 
 #landing{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #landing .img-container{
@@ -45,23 +45,15 @@
     animation-fill-mode: forwards;
     position: relative;
     top: -20vh;
-    letter-spacing: 2px;
     display: flex;
     flex-direction: column;
     background: var(--color2);
 }
 
 .title-container h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 0 15px;
-}
-
-.title-container h3{
-    font-size: 2rem;
-}
-
-.title-container h1 strong{
-    color: var(--highlight-color);
+    letter-spacing: 3px;
 }
 
 #landing .button-container{
@@ -100,60 +92,54 @@
     }
 }
 
-#mission{
-    background-color: var(--highlight-color);
-    flex-direction: column;
-    color: var(--color2);
-    justify-content: flex-start;
-}
-
-.mission-title{
-    font-size: 3rem;
-    margin-top: 5%;
-}
-
-.mission-statement{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    margin: 1% 20% 2%;
-    font-size: 1.5rem;
-    font-weight: 550;
-}
-
 #event{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
 .event-title{
     font-size: 1.5rem;
-    position: absolute;
     text-align: center;
-    top: 1%;
+    margin-top: 5vh;
 }
 
 .event-details{
-    height: 100%;
-    flex: 3;
-    display: flex;
-    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
     align-items: center;
-    flex-direction: column;
+    margin: 5vh 12vw;
 }
 
-.poster-container{
-    height: 100%;
-    flex: 2;
-    display: flex;
-    justify-content: center;
+.howtohelp{
+    flex-direction: column;
+    justify-content: flex-start !important;
     align-items: center;
 }
 
-#howtohelp{
+.howtohelp h1{
+    font-size: 3rem;
+    margin: 5vh;
+}
+
+.howtohelp .list-items{
+    font-size: 2rem;
+    height: 40vh;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.list-items li{
+    font-weight: 600;
+    color: var(--highlight-color);
+    filter: saturate(50%);
+}
+
+.list-items p{
+    font-size: 1.5rem;
+    width: 50vw;
+    margin-bottom: 3vh;
 }
 
 @media screen and (max-width: 1000px){
@@ -166,4 +152,14 @@
     #landing .img-container img{
         height: 100%;
     }
+}
+
+.home-link{
+    color: var(--highlight-color);
+    font-weight: 600;
+}
+
+.home-link:hover{
+    background: rgba(97, 97, 96, 0.2);
+
 }

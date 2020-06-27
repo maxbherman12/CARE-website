@@ -13,6 +13,7 @@
     transition: 0.5s ease;
     color: white;
     cursor: pointer;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 }
 
 .learn-card:hover{
@@ -32,19 +33,6 @@
     width: 100%;
     height: 100%;
 }
-
-/* .type-container{
-    position: absolute;
-    width: 40%;
-    height: 40px;
-    top: 0;
-    right: 0;
-    background: var(--highlight-color);
-    border-radius: 0 0 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .title-container{
     width: 100%;

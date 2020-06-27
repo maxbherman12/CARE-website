@@ -5,6 +5,7 @@ import {Switch, Route} from 'react-router-dom'
 
 import Header from './components/header/header.component'
 import HomePage from './pages/home/home.page'
+import AboutPage from './pages/about/about.page'
 import LearnPage from './pages/learn/learn.page'
 import DonatePage from './pages/donate/donate.page'
 import ContactPage from './pages/contact/contact.page'
@@ -25,6 +26,7 @@ class App extends React.Component{
         <div className='pages'>
           <Switch>
             <Route exact path='/' component={HomePage} />
+            <Route path='/about' component={AboutPage} />
             <Route path='/learn' component={LearnPage} />
             <Route path='/donate' component={DonatePage} />
             <Route path='/contact' component={ContactPage} />

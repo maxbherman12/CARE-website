@@ -2,7 +2,6 @@ import React from 'react'
 import './header.styles.css'
 
 import {Link} from 'react-router-dom'
-import {animateScroll as scroll} from 'react-scroll'
 
 import Logo from '../../s-l640.png'
 import { animateScroll } from 'react-scroll'

@@ -13,7 +13,7 @@ const HomePage = () => (
                 <img src="https://images.unsplash.com/photo-1590945796812-e577d2d0f73d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt=""/>
             </div>
             <div className="title-container">
-                <h1>The Youth Alliance <br/>Against Racial Inequality</h1>
+                <h1>Connecticut Alliance <br/>for Racial Equality</h1>
             </div>
             <div className="button-container">
                 <Anchor
@@ -22,57 +22,46 @@ const HomePage = () => (
                     offset={-69}
                     duration={1000}
                 >
-                    <CustomButton>About Us</CustomButton>
+                    <CustomButton>Our Event</CustomButton>
                 </Anchor>
                 <Link to='/donate'>
                     <CustomButton>Donate</CustomButton>
                 </Link>
             </div>
         </div>
-        <div className='page' id="event">
+        <div className='event page' id="event">
             <div className="event-title">
                 <h1>We Demand Justice:<br />A Concert for #BlackLivesMatter</h1>
             </div>
-            <div className="poster-container">
-                insert poster
-            </div>
             <div className="event-details">
-                <p>insert event details</p>
-                <Anchor
-                    to='mission'
-                    smooth={true}
-                    offset={-70}
-                    duration={1000}
-                >
-                    <CustomButton>Our Mission</CustomButton>
-                </Anchor>
+                <p>In partnership with the Westport Public Library, CARE. is currently planning a virtual benefit concert that will feature both local and professional musicians and speakers to support the Black Lives Matter movement. The event will be live streamed on August 2nd at 6pm. A link to access the live stream can be purchased on our <Link to='/donate' className='home-link'>Donate page. </Link> To be notified with any updates regarding our event, <a className='home-link' href="https://docs.google.com/forms/d/e/1FAIpQLSfdU_PfSdNbhinxtIDkfdZgpgcnzmBLsb5OLq-Ek3OzsesIMw/viewform?usp=sf_link">subscribe to our email list!</a> </p>
             </div>
+            <div className="button">
+                    <Anchor
+                        to='howtohelp'
+                        smooth={true}
+                        offset={-70}
+                        duration={1000}
+                    >
+                        <CustomButton>How to Help</CustomButton>
+                    </Anchor>
+                </div>
         </div>
-        <div className="page" id="mission">
-            <div className="mission-title">
-                <h1>Our Mission</h1>
+        <div className="howtohelp page" id="howtohelp">
+            <div className="title-container">
+                <h1>How You Can Help</h1>
             </div>
-            <div className="mission-statement">
-                <p>
-                    Our mission is to educate and raise awareness of the inherent, deeply rooted issues surrounding racial inequity in voting, education, and housing in our community to ensure it is one driven by acceptance and justice for the next generation of young people. 
-                </p>
+            <div className="list-items">
+                <ol>
+                    <li>Educate Yourself</li>
+                    <p>Visit our <Link to='/learn' className='home-link'>Learn page</Link> and explore our curated list of resources to learn how to best fight racism in our communities.</p>
+                    <li>Buy tickets to our event</li>
+                    <p>Visit our <Link to='/donate' className='home-link'>Donate page</Link> to purchase tickets to our virtual benefit concert, streaming live on August 2nd.</p>
+                    <li>Get involved</li>
+                    <p>Want to join our team? Visit our <Link to='/contact' className='home-link'>Contact page</Link> and send us a message!</p>
+                </ol>
             </div>
-            <Anchor
-                    to='howtohelp'
-                    smooth={true}
-                    offset={-60}
-                    duration={1000}
-                >
-                    <CustomButton altcolor>How to Help</CustomButton>
-                </Anchor>
-        </div>
-        <div className="page" id="howtohelp">
-            <h1>How YOU Can Help</h1>
-            <ol>
-                <li>Educate Yourself</li>
-                <li>Donate to the cause</li>
-                <li>Contact Us</li>
-            </ol>
+            
         </div>
     </div>
 )

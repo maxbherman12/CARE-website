@@ -3,7 +3,6 @@ import './gallery.styles.css'
 
 import Tabletop from 'tabletop'
 
-import Card from '../card/card.component'
 import DonateCard from '../donate-card/donate-card.component'
 
 import LeftArrow from './left arrow.png'
@@ -37,7 +36,6 @@ class Gallery extends React.Component{
     prevProperty = () => {
         const {currIndex} = this.state;
         if(currIndex > 0){
-            const newIndex = currIndex-1;
             this.setState({
                 rightbound: false,
                 currIndex: this.state.currIndex - 1
@@ -52,7 +50,6 @@ class Gallery extends React.Component{
     nextProperty = () => {
         const {currIndex} = this.state;
         if(currIndex < this.state.properties.length-3){
-            const newIndex = this.state.currIndex+1;
             this.setState({
                 leftbound: false,
                 currIndex: this.state.currIndex + 1
@@ -65,7 +62,7 @@ class Gallery extends React.Component{
 
     render(){
         const {properties, currIndex} = this.state;
-        const totalCardWidth = 740;
+        const totalCardWidth = 37;
         return(
             <div className="gallery">
                 <div 
@@ -79,7 +76,7 @@ class Gallery extends React.Component{
                     <div 
                         className="card-slider-wrapper"
                         style={{
-                        'transform': `translateX(-${currIndex*37}vw)`
+                        'transform': `translateX(-${currIndex*totalCardWidth}vw)`
                         }}
                     >
                         {
