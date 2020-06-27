@@ -54,15 +54,15 @@ class ContactForm extends React.Component{
                         <img src={EmailLogo} alt="insert"/>
                         <span>carewestport@gmail.com</span>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="facebook.com">
                         <img src={FacebookLogo} alt="social"/>
                         <span>facebook.com/care</span>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="instagram.com">
                         <img src={InstagramLogo} alt="media"/>
                         <span>@ctcarefoundation</span>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="twitter.com">
                         <img src={TwitterLogo} alt="links"/>
                         <span>@care</span>
                     </a></li>

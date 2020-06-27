@@ -23,7 +23,7 @@
     margin: 10vh auto 0;
 }
 
-.learn-options a{
+.learn-options p{
     font-size: 1.3rem;
     letter-spacing: 1px;
     font-weight: 600;
@@ -36,9 +36,10 @@
     display: inline-block;
     text-align: center;
     transition: .7s ease;
+    cursor: pointer;
 }
 
-.learn-options a.selected{
+.learn-options p.selected{
     color: var(--highlight-color);
 }
 
@@ -55,22 +56,22 @@
     transition: all 0.5s ease 0s;
 }
 
-a:nth-child(1).selected ~ .animation{
+p:nth-child(1).selected ~ .animation{
     left: 50px;
 }
-a:nth-child(2).selected~.animation{
+p:nth-child(2).selected~.animation{
     left: 260px;
     width: 80px;
 }
-a:nth-child(3).selected~.animation{
+p:nth-child(3).selected~.animation{
     left: 445px;
     width: 110px;
 }
-a:nth-child(4).selected~.animation{
+p:nth-child(4).selected~.animation{
     left: 665px;
     width: 70px;
 }
-a:nth-child(5).selected~.animation{
+p:nth-child(5).selected~.animation{
     left: 860px;
     width: 80px;
 }

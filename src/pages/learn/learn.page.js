@@ -35,41 +35,41 @@ class LearnPage extends React.Component{
         return(
             <div className="learn-page">
                 <div className="learn-options">
-                    <a href="#" className={this.state.all ? "selected" : ""} onClick={() => this.setState({
+                    <p href="#" className={this.state.all ? "selected" : ""} onClick={() => this.setState({
                             all: true,
                             Book: false,
                             Article: false,
                             Other: false,
                             Video: false
-                        })}>View All</a>
-                    <a href="#" className={this.state.Book ? "selected" : ""} onClick={() => this.setState({
+                        })}>View All</p>
+                    <p href="#" className={this.state.Book ? "selected" : ""} onClick={() => this.setState({
                             all: false,
                             Book: true,
                             Article: false,
                             Other: false,
                             Video: false
-                        })}>Books</a>
-                    <a href="#" className={this.state.Article ? "selected" : ""} onClick={() => this.setState({
+                        })}>Books</p>
+                    <p href="#" className={this.state.Article ? "selected" : ""} onClick={() => this.setState({
                             all: false,
                             Book: false,
                             Article: true,
                             Other: false,
                             Video: false
-                        })}>Articles</a>
-                    <a href="#" className={this.state.Video ? "selected" : ""} onClick={() => this.setState({
+                        })}>Articles</p>
+                    <p href="#" className={this.state.Video ? "selected" : ""} onClick={() => this.setState({
                             all: false,
                             Book: false,
                             Article: false,
                             Other: false,
                             Video: true
-                        })}>Videos</a>
-                    <a href="#" className={this.state.Other ? "selected" : ""} onClick={() => this.setState({
+                        })}>Videos</p>
+                    <p href="#" className={this.state.Other ? "selected" : ""} onClick={() => this.setState({
                             all: false,
                             Book: false,
                             Article: false,
                             Other: true,
                             Video: false
-                        })}>Other</a>
+                        })}>Other</p>
                     <div className="animation start-home"></div>
                 </div>
                 <div className="filtered-card-list">

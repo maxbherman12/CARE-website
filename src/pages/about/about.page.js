@@ -4,8 +4,7 @@ import './about.styles.css'
 import {Link} from 'react-router-dom'
 import {Link as Anchor} from 'react-scroll'
 
-import CustomButton from '../../components/custom-button/custom-button.component'
-import TeamMember from '../../components/team-member/team-member.component'
+// import TeamMember from '../../components/team-member/team-member.component'
 
 class AboutPage extends React.Component{
     constructor(){

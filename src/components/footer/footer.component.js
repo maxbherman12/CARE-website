@@ -9,23 +9,23 @@ import TwitterLogo from '../contact-form/imgs/twitter.png'
 const Footer = () => (
     <div className="footer">
         <ul className='social-media-links'>
-                    <li><a href="mailto:carewestport@gmail.com">
-                        <img src={EmailLogo} alt="insert"/>
-                        <span>carewestport@gmail.com</span>
-                    </a></li>
-                    <li><a href="#">
-                        <img src={FacebookLogo} alt="social"/>
-                        <span>facebook.com/care</span>
-                    </a></li>
-                    <li><a href="#">
-                        <img src={InstagramLogo} alt="media"/>
-                        <span>@ctcarefoundation</span>
-                    </a></li>
-                    <li><a href="#">
-                        <img src={TwitterLogo} alt="links"/>
-                        <span>@care</span>
-                    </a></li>
-                </ul>
+            <li><a href="mailto:carewestport@gmail.com">
+                <img src={EmailLogo} alt="insert"/>
+                <span>carewestport@gmail.com</span>
+            </a></li>
+            <li><a href="facebook.com">
+                <img src={FacebookLogo} alt="social"/>
+                <span>facebook.com/care</span>
+            </a></li>
+            <li><a href="instagram.com">
+                <img src={InstagramLogo} alt="media"/>
+                <span>@ctcarefoundation</span>
+            </a></li>
+            <li><a href="twitter.com">
+                <img src={TwitterLogo} alt="links"/>
+                <span>@care</span>
+            </a></li>
+        </ul>
     </div>
 )
 
