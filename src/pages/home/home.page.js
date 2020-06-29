@@ -58,7 +58,7 @@ const HomePage = () => (
                     <li>Buy tickets to our event</li>
                     <p>Visit our <Link to='/donate' className='home-link'>Donate page</Link> to purchase tickets to our virtual benefit concert, streaming live on August 2nd.</p>
                     <li>Get involved</li>
-                    <p>Want to join our team? Visit our <Link to='/contact' className='home-link'>Contact page</Link> and send us a message!</p>
+                    <p>Want to join our team? Click <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQ3q-N2iSQEUdMPWy9JIKt_Zt5QD6y6xofg36giS_qTBILsw/viewform?usp=sf_link" target='_blank' rel='noopener noreferrer' className='home-link'>here</a> to fill out our short, online application.</p>
                 </ol>
             </div>
             
