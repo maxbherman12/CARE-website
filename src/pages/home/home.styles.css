@@ -132,6 +132,7 @@
 
 .list-items li{
     font-weight: 600;
+    text-transform: uppercase;
     color: var(--highlight-color);
     filter: saturate(50%);
 }

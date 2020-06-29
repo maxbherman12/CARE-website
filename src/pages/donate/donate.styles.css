@@ -14,5 +14,6 @@
 }
 
 .donate-page .button-container{
+    transform: scale(1.25);
     margin: 5vh;
 }
