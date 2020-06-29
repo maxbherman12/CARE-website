@@ -15,12 +15,11 @@ const DonateCard = ({property}) => {
                 </div>
                 <div className="summary">
                     <p>{property.summary}
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ad temporibus, incidunt optio nostrum amet sunt saepe consectetur laboriosam perferendis? Atque dolorem sed ullam iste quae nulla debitis dolor repudiandae laborum totam ratione ea nemo amet eum, officia tenetur cum.
                     </p>
                 </div>
                 <div className="button">
                     <a href={property.source} target='_blank' rel="noopener noreferrer">
-                        <CustomButton >Learn More</CustomButton>
+                        <CustomButton>Learn More</CustomButton>
                     </a>
                 </div>
             </div>

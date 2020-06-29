@@ -46,6 +46,7 @@
     align-items: center;
     text-decoration: none;
     color: black;
+    font-size: 0.85rem;
   }
 
   .contact-form-container .contactInfo .social-media-links li a:hover{

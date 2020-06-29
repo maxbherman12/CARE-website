@@ -48,7 +48,7 @@ const HomePage = () => (
                 </div>
         </div>
         <div className="howtohelp page" id="howtohelp">
-            <div className="title-container">
+            <div className="help-title-container">
                 <h1>How You Can Help</h1>
             </div>
             <div className="list-items">

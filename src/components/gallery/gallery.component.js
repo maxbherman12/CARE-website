@@ -62,7 +62,7 @@ class Gallery extends React.Component{
 
     render(){
         const {properties, currIndex} = this.state;
-        const totalCardWidth = 37;
+        const totalCardWidth = 40;
         return(
             <div className="gallery">
                 <div 

@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     --num-cards: 2;
-    --card-width: 37vw;
+    --card-width: 40vw;
 }
 
 .card-slider {

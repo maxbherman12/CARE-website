@@ -37,8 +37,6 @@
 
 #landing .title-container{
     z-index: 2;
-    width: 40vw;
-    height: 25vh;
     animation: fadeIn 2s ease;
     animation-delay: 1s;
     opacity: 0;
@@ -47,18 +45,18 @@
     top: -20vh;
     display: flex;
     flex-direction: column;
-    background: var(--color2);
 }
 
 .title-container h1{
     font-size: 3rem;
     padding: 0 15px;
     letter-spacing: 3px;
+    background: var(--color2);
 }
 
 #landing .button-container{
     position: relative;
-    top: -20vh;
+    top: -22vh;
     display: flex;
     margin: 2rem 0;
     justify-content: space-between;
@@ -67,7 +65,7 @@
 }
 
 #landing .button-container .custom-button{
-    margin: 0 10px;
+    margin: 10px;
 }
 
 @keyframes fadeIn {
@@ -83,7 +81,7 @@
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateY(-150%);
+        transform: translateY(-125%);
     }
 
     to{
@@ -115,16 +113,18 @@
     flex-direction: column;
     justify-content: flex-start !important;
     align-items: center;
+    overflow-y: scroll;
 }
 
 .howtohelp h1{
     font-size: 3rem;
     margin: 5vh;
+    text-align: center;
 }
 
 .howtohelp .list-items{
+    position: relative;
     font-size: 2rem;
-    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,18 +142,6 @@
     margin-bottom: 3vh;
 }
 
-@media screen and (max-width: 1000px){
-    .title-container h1{
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 850px){
-    #landing .img-container img{
-        height: 100%;
-    }
-}
-
 .home-link{
     color: var(--highlight-color);
     font-weight: 600;
@@ -162,4 +150,88 @@
 .home-link:hover{
     background: rgba(97, 97, 96, 0.2);
 
+}
+
+@media screen and (max-width: 1000px){
+    #landing .title-container h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #landing .title-container{
+        top: -10vh;
+    }
+
+    #landing .button-container{
+        top: -10vh;
+    }
+
+    #landing .img-container img{
+        height: 100%;
+    }
+    .event-title{
+        font-size: 1.3rem;
+    }
+
+    .event-details{
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 5vh 5vw;
+    }
+    .howtohelp .list-items{
+        font-size: 1.8rem;
+        left: 6vw;
+    }
+    
+    .list-items p{
+        font-size: 1.2rem;
+        width: 70vw;
+        margin-bottom: 3vh;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #landing .title-container{
+        top: -23vh;
+    }
+    #landing .title-container h1{
+        font-size: 1.8rem;
+        background-color: transparent;
+        letter-spacing: 1px;
+    }
+    #landing .button-container{
+        top: -28vh;
+        flex-direction: column;
+    }
+    #landing .button-container .custom-button{
+        transform: scale(0.9);
+    }
+    #landing .img-container{
+        top: 35vh;
+        height: 40vh;
+    }
+    .event-title{
+        font-size: 1rem;
+    }
+
+    .event-details{
+        font-size: 1rem;
+        text-align: center;
+        margin: 5vh 5vw;
+    }
+
+    .howtohelp h1{
+        font-size: 2rem;
+    }
+    .howtohelp .list-items{
+        font-size: 1.5rem;
+        left: 6vw;
+    }
+    
+    .list-items p{
+        font-size: 1rem;
+        width: 70vw;
+        margin-bottom: 3vh;
+    }
 }
