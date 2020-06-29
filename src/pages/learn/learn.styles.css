@@ -6,7 +6,7 @@
     min-height: 90vh;
     position: relative;
     color: black;
-    animation: fadeIn 0.5s ease 0s forwards;
+    animation: fadeIn 1s ease 0s forwards;
 }
 
 .filtered-card-list{
@@ -32,7 +32,7 @@
     margin: 5px 50px;
     position: relative;
     z-index: 0;
-    width: 100px;
+    width: 120px;
     display: inline-block;
     text-align: center;
     transition: .7s ease;
@@ -51,53 +51,40 @@
     z-index: -1;
     background-color: var(--highlight-color);
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
-    width: 100px;
+    width: 120px;
     border-radius: 8px;
     transition: all 0.5s ease 0s;
 }
 
 p:nth-child(1).selected ~ .animation{
-    left: 50px;
+    left: 55px;
+    width: 110px;
 }
 p:nth-child(2).selected~.animation{
-    left: 260px;
+    left: 290px;
     width: 80px;
 }
 p:nth-child(3).selected~.animation{
-    left: 445px;
+    left: 495px;
     width: 110px;
 }
 p:nth-child(4).selected~.animation{
-    left: 665px;
-    width: 70px;
+    left: 730px;
+    width: 80px;
 }
 p:nth-child(5).selected~.animation{
-    left: 860px;
+    left: 950px;
     width: 80px;
 }
 
 
 @media screen and (max-width: 1200px){
-    .sidebar{
-        width: 80%;
-        height: auto;
-        top: 10vh;
-        left: auto;
-        display: flex;
-        flex: 1;
-        border-left: black solid 1px;
-    }
-    .checkboxes{
-        flex-direction: row;
-        flex: 4;
-        justify-content: space-evenly;
-    }
     .filtered-card-list{
         padding: 10vh;
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
     .animation{
         display: none;
     }

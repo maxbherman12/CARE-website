@@ -9,28 +9,28 @@ import { animateScroll } from 'react-scroll'
 const Header = () => (
     <div className='header'>
         <nav>
-            <div className="logo-container" onClick={() => animateScroll.scrollToTop()}>
+            <div className="logo-container" onClick={() => animateScroll.scrollToTop({duration: 1})}>
                 <Link to='/' style={{"color": "white"}}>
                     <img src={Logo} alt=""/>
                 </Link>
             </div>
             <div className='options'>
-                <div className="option" onClick={() => animateScroll.scrollToTop()}>
+                <div className="option" onClick={() => animateScroll.scrollToTop({duration: 1})}>
                     <Link className='link' to='/about'>
                         ABOUT
                     </Link>
                 </div>
-                <div className="option" onClick={() => animateScroll.scrollToTop()}>
+                <div className="option" onClick={() => animateScroll.scrollToTop({duration: 1})}>
                     <Link className='link' to='/learn'>
                         LEARN
                     </Link>
                 </div>
-                <div className="option" onClick={() => animateScroll.scrollToTop()}>
+                <div className="option" onClick={() => animateScroll.scrollToTop({duration: 1})}>
                     <Link className='link' to='/donate'>
                         DONATE
                     </Link>
                 </div>
-                <div className="option" onClick={() => animateScroll.scrollToTop()}>
+                <div className="option" onClick={() => animateScroll.scrollToTop({duration: 1})}>
                     <Link className='link' to='/contact'>
                         CONTACT
                     </Link>

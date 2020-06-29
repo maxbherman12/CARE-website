@@ -186,21 +186,23 @@
 
 @media screen and (max-width: 600px){
     #about-landing h4{
-        font-size: 10rem;
-        top: calc(50vh - 7rem);
+        font-size: 8rem;
+        top: calc(50vh - 12rem);
     }
     .about-title{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .about-summary{
         margin: 1rem 2rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        text-align: center;
     }
     .mission-title{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .mission-statement{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        margin: 5% 15%;
     }
 }
