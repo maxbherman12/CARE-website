@@ -13,7 +13,7 @@ const Footer = () => (
                 <img src={EmailLogo} alt="insert"/>
                 <span>carewestport@gmail.com</span>
             </a></li>
-            <li><a href="https://facebook.com" target='_blank' rel="noopener noreferrer">
+            <li><a href="https://www.facebook.com/CARE-Foundation-114006050368382/?view_public_for=114006050368382" target='_blank' rel="noopener noreferrer">
                 <img src={FacebookLogo} alt="social"/>
                 <span>facebook.com/CAREfoundation</span>
             </a></li>
