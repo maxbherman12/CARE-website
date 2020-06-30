@@ -33,7 +33,6 @@ class ContactForm extends React.Component{
                 user_email: '',
                 message_html: ''
             })
-            alert('rob is megagay')
         }catch(error){
             alert('There was an unknown error. Please try again later.')
         }
