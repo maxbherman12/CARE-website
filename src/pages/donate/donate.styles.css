@@ -6,6 +6,11 @@
     text-align: center;
     overflow: hidden;
     animation: fadeIn 2s ease 0s forwards;
+    padding-bottom: 15vh;
+}
+
+.donate-page h2{
+    margin: 2rem 15rem;
 }
 
 .donate-page .info{
