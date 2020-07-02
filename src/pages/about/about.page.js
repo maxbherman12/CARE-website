@@ -4,7 +4,11 @@ import './about.styles.css'
 import {Link} from 'react-router-dom'
 import {Link as Anchor} from 'react-scroll'
 
-// import TeamMember from '../../components/team-member/team-member.component'
+import Max from './img/max.jpeg'
+import Natasha from './img/natasha.JPG'
+import AnnaMaria from './img/annamaria.jpeg'
+
+import TeamMember from '../../components/team-member/team-member.component'
 
 const AboutPage = () => (
     <div className="about">
@@ -34,7 +38,7 @@ const AboutPage = () => (
                         </div>
                     </div>
                 </Anchor>
-                {/* <Anchor
+                <Anchor
                     to='team'
                     smooth={true}
                     offset={-65}
@@ -45,7 +49,7 @@ const AboutPage = () => (
                             <span>Our Team</span>
                         </div>
                     </div>
-                </Anchor> */}
+                </Anchor>
             </div>
         </div>
         <div className='page' id="about-landing">
@@ -67,12 +71,29 @@ const AboutPage = () => (
                 </p>
             </div>
         </div>
-        {/* <div className="page" id="team">
+        <div className="page" id="team">
             <h1>Our Team</h1>
             <div className="team-container">
-                <TeamMember />
+                <TeamMember
+                    img={Max}
+                    name='Max Herman'
+                    position='President, CTO'
+                    bio='Max is a rising sophomore at Vanderbilt University pursuing a double major in the Communication of Science and Technology and Computer Science with minors in Business and Vocal Performance. Aside from his studies, Max is also passionate about music, travel, and the Miami Dolphins. When he’s not studying or watching yet another unsuccessful game at Hard Rock Stadium, you can find him singing with his college a cappella group, Harmonic Notion.'
+                />
+                <TeamMember
+                    img={Natasha}
+                    name='Natasha Johnson'
+                    position='VP of Philanthropy'
+                    bio='Natasha is a rising freshman at the University of Pennsylvania, where she will be attending Wharton and hopes to concentrate in Marketing or Finance with a minor in Computer Science. When she is not in the classroom, she enjoys writing spoken words and immersing herself in her Jamaican and Black culture through reading and activism. She also loves to run, listen to music, and travel to new places with her friends.'
+                />
+                <TeamMember
+                    img={AnnaMaria}
+                    name='AnnaMaria Fernandez'
+                    position='VP of Alternative Fundraising and Outreach'
+                    bio='AnnaMaria is a rising freshman at Muhlenberg College with intentions of pursuing a double major in Theater and Dance with minors in Sociology and Vocal Performance. Aside from her studies, AnnaMaria is also passionate about all types of art, food, and making people happy. When she’s not baking or watching Criminal Minds, you can find her outside learning tik tok dances with her friends.'
+                />
             </div>
-        </div> */}
+        </div>
     </div>
 )
 

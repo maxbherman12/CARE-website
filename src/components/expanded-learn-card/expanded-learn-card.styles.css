@@ -25,7 +25,11 @@
     width: 50%;
     height: 100%;
     position: relative;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color5);
 }
 
 .expanded-card-content .exit-container{
@@ -41,14 +45,14 @@
 
 .expanded-card-content .title-container{
     width: 100%;
-    height: 25%;
     font-size: 1.5em;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 0 20px;
 }
 
 .expanded-card-content .summary-container{
     width: 100%;
-    height: 50%;
+    height: auto;
     padding: 0 20px;
     text-align: center;
     overflow: scroll;
@@ -57,7 +61,7 @@
 .expanded-card-content .button-container{
     display: flex;
     justify-content: center;
-    height: 25%;
+    height: 20%;
     padding: 20px;
 }
 

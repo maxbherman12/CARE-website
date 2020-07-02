@@ -33,6 +33,7 @@ class ContactForm extends React.Component{
                 user_email: '',
                 message_html: ''
             })
+            alert('Thanks for contacting us! We will get back to you as soon as possible.')
         }catch(error){
             alert('There was an unknown error. Please try again later.')
         }

@@ -193,3 +193,12 @@
       top: 0;
     }
   }
+
+  @media screen and (max-width: 500px){
+    .contact-form-container .contactForm{
+      padding: 1rem;
+    }
+    .contact-form-container .contactForm .formBox{
+      /* justify-content: flex-end; */
+    }
+  }

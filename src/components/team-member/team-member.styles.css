@@ -1,5 +1,58 @@
 .team-member{
+    display: flex;
+    border-radius: 5px;
+    width: 60vw;
+    padding: 1rem;
+    margin: 5vh 0;
+    transition: .7s ease;
+    color: var(--color5);
+}
+
+.team-member .img-container{
+    margin-right: 2vw;
+    width: 25%;
+}
+
+.team-member .img-container img{
     width: 100%;
-    height: 7rem;
-    background-color: red;
+    height: 100%;
+}
+
+.team-member .content-container{
+    width: 75%;
+}
+
+@media screen and (max-width: 1000px){
+    .team-member{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .team-member{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .team-member{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .team-member .img-container{
+        margin: 0;
+        width: 40%;
+    }
+
+    .team-member .content-container{
+        text-align: center;
+        width: 100%;
+    }
+
+    .team-member .content-container{
+        font-size: .8rem;
+        padding: 1rem;
+    }
 }

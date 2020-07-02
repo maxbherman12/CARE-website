@@ -8,7 +8,7 @@ import DonateCard from '../donate-card/donate-card.component'
 import LeftArrow from './left arrow.png'
 import RightArrow from './right arrow.png'
 
-import DONATE_DATA from '../../donate-data'
+import DONATE_DATA from '../../data/donate-data'
 
 class Gallery extends React.Component{
     constructor(props){
@@ -49,13 +49,13 @@ class Gallery extends React.Component{
 
     nextProperty = () => {
         const {currIndex} = this.state;
-        if(currIndex < this.state.properties.length-3){
+        if(currIndex < this.state.properties.length-2){
             this.setState({
                 leftbound: false,
                 currIndex: this.state.currIndex + 1
             })
         }
-        if(currIndex===this.state.properties.length-4){
+        if(currIndex===this.state.properties.length-3){
             this.setState({rightbound: true})
         }
     }

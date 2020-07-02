@@ -9,7 +9,7 @@
 }
 
 .about .page{
-    height: 91vh;
+    min-height: 91vh;
     min-width: 100vw;
     overflow: hidden;
     display: flex;
@@ -68,7 +68,7 @@
     z-index: -10;
     position: absolute;
     border-radius: 40%;
-    transition: 0.5s ease;
+    transition: .5s ease;
     overflow: hidden;
 }
 
@@ -85,13 +85,15 @@
     transition: 0.8s ease;
     line-height: 1.2rem;
     font-size: 1.2rem;
+    transition: 1s ease;
+    transition-delay: .2s;
+    position: relative;
 }
 
 .about .nav-circle:hover span{
     display: inline;
     position: absolute;
     opacity: 1;
-    transition: 0.1s ease;
 }
 
 #about-landing{
@@ -146,12 +148,8 @@
 }
 
 #team h1{
-    font-size: 3rem;
-    margin: 5vh;
-}
-
-.team-container{
-    width: 50vw;
+    font-size: 4rem;
+    margin-top: 5vh;
 }
 
 @media screen and (max-width: 1000px){
@@ -205,5 +203,9 @@
     .mission-statement{
         font-size: 1.4rem;
         margin: 5% 15%;
+    }
+
+    #team h1{
+        font-size: 2.5rem;
     }
 }

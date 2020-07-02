@@ -15,7 +15,7 @@ const Footer = () => (
             </a></li>
             <li><a href="https://www.facebook.com/CARE-Foundation-114006050368382/?view_public_for=114006050368382" target='_blank' rel="noopener noreferrer">
                 <img src={FacebookLogo} alt="social"/>
-                <span>facebook.com/CAREfoundation</span>
+                <span>@CAREfoundation</span>
             </a></li>
             <li><a href="https://www.instagram.com/ctcarefoundation/" target='_blank' rel="noopener noreferrer">
                 <img src={InstagramLogo} alt="media"/>
