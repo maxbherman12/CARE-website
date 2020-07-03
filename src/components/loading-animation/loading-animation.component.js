@@ -2,13 +2,13 @@ import React from 'react'
 import './loading-animation.styles.css'
 
 const LoadingAnimation = () => (
-    <div class="wrapper">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="shadow"></div>
-        <div class="shadow"></div>
-        <div class="shadow"></div>
+    <div className="wrapper">
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="shadow"></div>
+        <div className="shadow"></div>
+        <div className="shadow"></div>
         <span>Loading Content</span>
     </div>
 )
