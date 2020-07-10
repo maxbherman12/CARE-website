@@ -3,16 +3,23 @@ import './header.styles.css'
 
 import {Link} from 'react-router-dom'
 
-import Logo from '../../s-l640.png'
+import CARE from './care.png'
+import YELLOW_CARE from './careyellow.png'
+
 import { animateScroll } from 'react-scroll'
 
 const Header = () => (
     <div className='header'>
         <nav>
             <div className="logo-container" onClick={() => animateScroll.scrollToTop({duration: 1})}>
-                <Link to='/' style={{"color": "white"}}>
-                    <img src={Logo} alt=""/>
-                </Link>
+                <div className="logos">
+                    <Link to='/' className='hover-logo'>
+                        <img src={YELLOW_CARE} alt=""/>
+                    </Link>
+                    <Link to='/' className='reg-logo'>
+                        <img src={CARE} alt=""/>
+                    </Link>
+                </div>
             </div>
             <div className='options'>
                 <div className="option" onClick={() => animateScroll.scrollToTop({duration: 1})}>

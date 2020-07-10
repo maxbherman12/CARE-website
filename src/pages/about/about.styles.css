@@ -63,7 +63,7 @@
 .about .nav-circle .text-container{
     width: 1.5vw;
     height: 2.5vw;
-    background: linear-gradient(to left,#26262600, 30%, #262626);
+    background: linear-gradient(to left,#d3d3d300, 30%, #e2e2e2);
     opacity: 0;
     z-index: -10;
     position: absolute;
@@ -88,6 +88,7 @@
     transition: 1s ease;
     transition-delay: .2s;
     position: relative;
+    color: black;
 }
 
 .about .nav-circle:hover span{
@@ -98,6 +99,7 @@
 
 #about-landing{
     align-items: center;
+    justify-content: space-around;
     flex-direction: column;
 }
 
@@ -115,9 +117,9 @@
 }
 
 .about-summary{
-    margin: 1rem 10rem;
+    margin: 0 10rem 10rem;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: justify;
 }
 
 #mission{
