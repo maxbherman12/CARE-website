@@ -1,7 +1,6 @@
 import React from 'react'
 import './about.styles.css'
 
-import {Link} from 'react-router-dom'
 import {Link as Anchor} from 'react-scroll'
 
 import Max from './img/max.jpeg'
