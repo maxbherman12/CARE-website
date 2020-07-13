@@ -7,12 +7,12 @@
     position: fixed;
     z-index: 3;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 nav{
     width: 90%;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     display: flex;
     position: relative;
 }
