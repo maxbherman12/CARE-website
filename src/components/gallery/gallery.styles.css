@@ -6,8 +6,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    --num-cards: 2;
-    --card-width: 40vw;
+    --num-cards: 1;
+    --card-width: 47vw;
 }
 
 .card-slider {
@@ -21,10 +21,9 @@
 
 .card-slider-wrapper {
     display: flex;
-    /* height: 300px; */
     align-items: center;
     justify-content: flex-start;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 1s;
 }
 
 .arrow{
@@ -40,11 +39,6 @@
 .arrow img{
     width: 100%;
     cursor: pointer;
-}
-
-.arrow.disabled img{
-    cursor: not-allowed;
-    opacity: 0.3;
 }
 
 .alt-gallery{

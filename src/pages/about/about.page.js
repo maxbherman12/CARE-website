@@ -59,7 +59,7 @@ const AboutPage = () => (
             <div className="about-summary">
                 <p>We are CARE, a nonprofit organization based out of Westport, CT dedicated to servicing local Black communities. Following the murder of George Floyd, we took to the streets in protest with thousands of our peers. Inspired by their roaring cries for justice, we founded CARE to serve as a union for those demanding action.
                 <br/><br/>
-                CARE’s purpose is two-fold, to educate and to fundraise. We have created a curated library of resources for people who don’t yet fully understand the deep rooted nature of the problems highlighted by the Black Lives Matter movement. Our repository includes an array of multimedia that illustrates the injustices Black people have faced, unveils hidden biases that people did not know they held, and challenges audiences to ask themselves uncomfortable questions regarding their own relationship with race.
+                CARE’s purpose is two-fold, to educate and to fundraise. We have created a curated library of resources for people who do not yet fully understand the deep rooted nature of the problems highlighted by the Black Lives Matter movement. Our repository includes an array of multimedia that illustrates the injustices Black people have faced, unveils hidden biases that people did not know they held, and challenges audiences to ask themselves uncomfortable questions regarding their own relationship with race.
                 <br/><br/>
                 Still, education is only half of the solution. Even if everyone who visited this page immediately understood their biases and could eradicate them instantly (which is no simple feat, it takes concerted time and effort), there will always be those who continue to balk at change. Hence, supporting organizations that protect against the malintent of those who refuse to listen and fight for real change is undeniably crucial.
                 <br/><br/>
@@ -74,7 +74,7 @@ const AboutPage = () => (
             </div>
             <div className="mission-statement">
                 <p>
-                    Our mission is to educate and raise awareness of the inherent, deeply rooted issues surrounding racial inequity in voting and education in our community to ensure it is one driven by acceptance and justice for the next generation of young people. 
+                    Our mission is to educate, raise awareness, and expunge the inherent, deeply rooted issues surrounding racial inequity in voting and education in our community to ensure it is one driven by acceptance and justice for the next generation of young people. 
                 </p>
             </div>
         </div>

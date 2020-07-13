@@ -1,8 +1,6 @@
 import React from 'react'
 import './gallery.styles.css'
 
-import Tabletop from 'tabletop'
-
 import DonateCard from '../donate-card/donate-card.component'
 
 import LeftArrow from './left arrow.png'
@@ -15,54 +13,40 @@ class Gallery extends React.Component{
         super(props);
         this.state = {
             properties: DONATE_DATA,
-            currIndex: 0,
-            leftbound: true,
-            rightbound: false
+            currIndex: 0
         }
         this.prevProperty = this.prevProperty.bind(this)
         this.nextProperty = this.nextProperty.bind(this)
-    }
-
-    componentDidMount() {
-        Tabletop.init({
-            key: '1g4g_NT8I7hXUIw5f0tb0UOGWXCFGwalNeE4s8DQVwLs',
-            callback: googleData => {
-            this.setState({properties: this.state.properties.concat(googleData)
-            })}, 
-            simpleSheet: true
-        })
     }
 
     prevProperty = () => {
         const {currIndex} = this.state;
         if(currIndex > 0){
             this.setState({
-                rightbound: false,
                 currIndex: this.state.currIndex - 1
             })
         }
-        if(currIndex===1){
-            this.setState({leftbound: true})
+        else{
+            this.setState({currIndex: this.state.properties.length-1})
         }
         
     }
 
     nextProperty = () => {
         const {currIndex} = this.state;
-        if(currIndex < this.state.properties.length-2){
+        if(currIndex < this.state.properties.length-1){
             this.setState({
-                leftbound: false,
                 currIndex: this.state.currIndex + 1
             })
         }
-        if(currIndex===this.state.properties.length-3){
-            this.setState({rightbound: true})
+        else{
+            this.setState({currIndex: 0})
         }
     }
 
     render(){
         const {properties, currIndex} = this.state;
-        const totalCardWidth = 40;
+        const totalCardWidth = 47;
         return(
             <div className="gallery">
                 <div 
