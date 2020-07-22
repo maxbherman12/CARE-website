@@ -124,9 +124,15 @@
 
 #mission{
     background-color: var(--highlight-color);
-    flex-direction: column;
     color: var(--color2);
-    justify-content: flex-start;
+    position: relative;
+}
+.mission-content{
+    position: relative;
+    top: -10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 

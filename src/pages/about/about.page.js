@@ -69,13 +69,15 @@ const AboutPage = () => (
             </div>
         </div>
         <div className="page" id="mission">
-            <div className="mission-title">
-                <h1>Our Mission</h1>
-            </div>
-            <div className="mission-statement">
-                <p>
-                    Our mission is to educate, raise awareness, and expunge the inherent, deeply rooted issues surrounding racial inequity in voting and education in our community to ensure it is one driven by acceptance and justice for the next generation of young people. 
-                </p>
+            <div className="mission-content">
+                <div className="mission-title">
+                    <h1>Our Mission</h1>
+                </div>
+                <div className="mission-statement">
+                    <p>
+                        Our mission is to educate, raise awareness, and expunge the inherent, deeply rooted issues surrounding racial inequity in voting and education in our community to ensure it is one driven by acceptance and justice for the next generation of young people. 
+                    </p>
+                </div>
             </div>
         </div>
         <div className="page" id="team">

@@ -7,7 +7,9 @@ import Gallery from '../../components/gallery/gallery.component';
 const DonatePage = () => (
     <div className='donate-page'>
          <div className="button-container">
-            <CustomButton onClick={() => alert('We are currently working on setting up our donation management system. Please check back again in a few days. We apologize for the inconvenience.')} border>DONATE to CARE.</CustomButton>
+            <CustomButton onClick={() => {
+                window.open("https://www.fccfoundation.org/carefund")
+            }} border>DONATE to CARE.</CustomButton>
         </div>
         <h2>To donate to these hardworking, local organizations, please click the link above. Scroll through our gallery to learn more.</h2>
         <Gallery />

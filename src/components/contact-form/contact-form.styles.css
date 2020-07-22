@@ -198,7 +198,7 @@
     .contact-form-container .contactForm{
       padding: 1rem;
     }
-    .contact-form-container .contactForm .formBox{
-      /* justify-content: flex-end; */
+    .contact-form-container .contactForm h2{
+        text-align: center;
     }
   }

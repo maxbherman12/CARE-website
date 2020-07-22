@@ -6,11 +6,13 @@
     text-align: center;
     overflow: hidden;
     animation: fadeIn 2s ease 0s forwards;
-    padding-bottom: 15vh;
+    padding-bottom: 10vh;
 }
 
 .donate-page h2{
-    margin: 2rem 15rem;
+    margin: 2rem 10rem;
+    font-size: 1.5rem;
+    margin-top: 0;
 }
 
 .donate-page .info{
@@ -19,6 +21,13 @@
 }
 
 .donate-page .button-container{
-    transform: scale(1.25);
-    margin: 5vh;
+    transform: scale(1.5);
+    margin: 10vh;
+}
+
+@media screen and (max-width: 600px){
+    .donate-page h2{
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
 }

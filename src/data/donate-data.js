@@ -1,10 +1,10 @@
 const DONATE_DATA = [
     {
         index: 0,
-        name: 'Civic Education Grants Program',
-        source: 'https://fccfoundation.org/civic-education-grants-program/',
-        img: 'https://www.graphis.com/media/uploads/cache/48/a0/48a03abea3246bc88d25d07d31bd4c9a.jpg',
-        summary: 'The Foundation is concerned with the limited focus on civic education in formal educational systems that contributes to low voter participation in the county’s urban communities. The program supports organizations engaging in efforts to improve civic knowledge and information access for historically disengaged and/or disenfranchised populations.'
+        name: 'Faith Acts',
+        source: 'https://faithacts.org/',
+        img: 'https://lh3.googleusercontent.com/-zo8FOcN9PIU/AAAAAAAAAAI/AAAAAAAAAAA/4MI3Z45mnCA/s88-p-k-no-ns-nd/photo.jpg',
+        summary: 'FaithActs for Education is a grassroots community organizing nonprofit based in Bridgeport, Connecticut. We are people of faith building power to get our children the education they deserve. We believe that every child deserves the opportunity to graduate from college, take care of their family, and fulfill their God-given potential. We build relationships, we build leaders, and we build power through community organizing and civic engagement.'
     },
     {
         index: 1,
