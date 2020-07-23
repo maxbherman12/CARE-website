@@ -15,5 +15,4 @@ const DonatePage = () => (
         <Gallery />
     </div>
 )
-
 export default DonatePage;

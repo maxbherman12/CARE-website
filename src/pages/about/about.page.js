@@ -57,7 +57,7 @@ const AboutPage = () => (
                 <h1>About Us</h1>
             </div>
             <div className="about-summary">
-                <p>We are CARE, a nonprofit organization based out of Westport, CT dedicated to servicing local Black communities. Following the murder of George Floyd, we took to the streets in protest with thousands of our peers. Inspired by their roaring cries for justice, we founded CARE to serve as a union for those demanding action.
+                <p>We are CARE, a donor advised fund managed by Fairfield County's Community Foundation dedicated to servicing local Black communities. Following the murder of George Floyd, we took to the streets in protest with thousands of our peers. Inspired by their roaring cries for justice, we founded CARE to serve as a union for those demanding action.
                 <br/><br/>
                 CARE’s purpose is two-fold, to educate and to fundraise. We have created a curated library of resources for people who do not yet fully understand the deep rooted nature of the problems highlighted by the Black Lives Matter movement. Our repository includes an array of multimedia that illustrates the injustices Black people have faced, unveils hidden biases that people did not know they held, and challenges audiences to ask themselves uncomfortable questions regarding their own relationship with race.
                 <br/><br/>
