@@ -34,7 +34,7 @@ const HomePage = () => (
                 <h1>We Demand Justice:<br />A Concert for #BlackLivesMatter</h1>
             </div>
             <div className="event-details">
-                <p>Please join us for our virtual benefit concert on August 9th at 6pm, which will include performances from professional artists and Fairfield County teens as well as speeches from the leaders of our partnering organizations and community. Please make a donation of any size to be emailed a viewing link on the day of our event on our <Link to='/donate' className='home-link'>Donate page. </Link> To be notified with any updates regarding our event, <a className='home-link' href="https://docs.google.com/forms/d/e/1FAIpQLSfdU_PfSdNbhinxtIDkfdZgpgcnzmBLsb5OLq-Ek3OzsesIMw/viewform?usp=sf_link">subscribe to our email list!</a> </p>
+                <p>Please join us for our virtual benefit concert on August 9th at 7:30pm, which will include performances from professional artists and Fairfield County teens as well as speeches from the leaders of our partnering organizations and community. Please make a donation of any size to be emailed a viewing link on the day of our event on our <Link to='/donate' className='home-link'>Donate page. </Link> To be notified with any updates regarding our event, <a className='home-link' href="https://docs.google.com/forms/d/e/1FAIpQLSfdU_PfSdNbhinxtIDkfdZgpgcnzmBLsb5OLq-Ek3OzsesIMw/viewform?usp=sf_link">subscribe to our email list!</a> </p>
             </div>
             <div className="button">
                     <Anchor
