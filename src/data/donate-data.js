@@ -10,7 +10,7 @@ const DONATE_DATA = [
         index: 1,
         name: 'Connect-Us',
         source: 'https://www.connectusct.org/',
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTD1E2V5Z_gq5PsdJVip98OIgNOtj5_Dp167g&usqp=CAU',
+        img: 'https://images.squarespace-cdn.com/content/5967939f72af65654d0e7310/1596467538912-EXRBN7S2ZFFI243H0V7C/CU+Graphic.png?content-type=image%2Fpng',
         summary:'We bring together suburban and urban neighbors in partnership to improve the quality of outcomes for young people living in communities of concentrated poverty. Connect-Us youth programs are designed to complement formal education with afterschool growth opportunities that expand the vistas of youth living in Bridgeport, CT.'
     },
     {
