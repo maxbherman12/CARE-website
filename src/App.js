@@ -12,13 +12,6 @@ import ContactPage from './pages/contact/contact.page'
 import Footer from './components/footer/footer.component'
 
 class App extends React.Component{
-  constructor(){
-    super();
-    this.state = {
-
-    }
-  }
-
   render(){
     return (
       <div>

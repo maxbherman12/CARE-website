@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './home.styles.css';
 
 import {Link} from 'react-router-dom'
@@ -6,8 +6,26 @@ import {Link as Anchor} from 'react-scroll'
 
 import CustomButton from '../../components/custom-button/custom-button.component'
 
-const HomePage = () => (
-    <div className="home">
+const HomePage = () => {
+    const [display, setDisplay] = useState(false);
+    return(
+    <div className="home" onLoad={()=>setTimeout(()=>setDisplay(!display), 3500)}>
+        <div className={`${display ? "pop-up" : "closed"}`}>
+            <div className="exit-btn" onClick={()=>setDisplay(!display)}>
+                X
+            </div>
+            <div className="pop-up-content">
+                <h1>We Demand Justice Virtual Concert</h1>
+                <h2>POSTPONED</h2>
+                <p>due to power outages caused by tropical storm Isaias</p>
+                <h3>New Date: AUG 16</h3>
+                <div className="pop-up-btn">
+                    <CustomButton onClick={() => {
+                window.open("https://www.fccfoundation.org/carefund")
+            }} altcolor>Buy Tickets</CustomButton>
+                </div>
+            </div>
+        </div>
         <div className="page" id='landing'>
             <div className="img-container">
                 <img src="https://images.unsplash.com/photo-1590945796812-e577d2d0f73d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt=""/>
@@ -64,6 +82,6 @@ const HomePage = () => (
             
         </div>
     </div>
-)
+)}
 
 export default HomePage;
