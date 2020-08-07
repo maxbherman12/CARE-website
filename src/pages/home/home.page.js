@@ -52,7 +52,7 @@ const HomePage = () => {
                 <h1>We Demand Justice:<br />A Concert for #BlackLivesMatter</h1>
             </div>
             <div className="event-details">
-                <p>Please join us for our virtual benefit concert on August 9th at 7:30pm, which will include performances from professional artists and Fairfield County teens as well as speeches from the leaders of our partnering organizations and community. Please make a donation of any size to be emailed a viewing link on the day of our event on our <Link to='/donate' className='home-link'>Donate page. </Link> To be notified with any updates regarding our event, <a className='home-link' href="https://docs.google.com/forms/d/e/1FAIpQLSfdU_PfSdNbhinxtIDkfdZgpgcnzmBLsb5OLq-Ek3OzsesIMw/viewform?usp=sf_link">subscribe to our email list!</a> </p>
+                <p>Please join us for our virtual benefit concert on <strong>August 16th at 7:30pm</strong>, which will include performances from professional artists and Fairfield County teens as well as speeches from the leaders of our partnering organizations and community. Please make a donation of any size to be emailed a viewing link on the day of our event on our <Link to='/donate' className='home-link'>Donate page. </Link> To be notified with any updates regarding our event, <a className='home-link' href="https://docs.google.com/forms/d/e/1FAIpQLSfdU_PfSdNbhinxtIDkfdZgpgcnzmBLsb5OLq-Ek3OzsesIMw/viewform?usp=sf_link">subscribe to our email list!</a> </p>
             </div>
             <div className="button">
                     <Anchor
@@ -74,7 +74,7 @@ const HomePage = () => {
                     <li>Educate Yourself</li>
                     <p>Visit our <Link to='/learn' className='home-link'>Learn page</Link> and explore our curated list of resources to learn how to best fight racism in our communities.</p>
                     <li>Buy tickets to our event</li>
-                    <p>Visit our <Link to='/donate' className='home-link'>Donate page</Link> to purchase tickets to our virtual benefit concert, streaming live on August 9th.</p>
+                    <p>Visit our <Link to='/donate' className='home-link'>Donate page</Link> to purchase tickets to our virtual benefit concert, streaming live on August 16th.</p>
                     <li>Get involved</li>
                     <p>Want to join our team? Click <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQ3q-N2iSQEUdMPWy9JIKt_Zt5QD6y6xofg36giS_qTBILsw/viewform?usp=sf_link" target='_blank' rel='noopener noreferrer' className='home-link'>here</a> to fill out our short, online application.</p>
                 </ol>
