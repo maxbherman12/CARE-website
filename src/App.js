@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import {Switch, Route, Redirect} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 
 import Header from './components/header/header.component'
 import HomePage from './pages/home/home.page'
