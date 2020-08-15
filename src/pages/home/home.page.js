@@ -16,9 +16,10 @@ const HomePage = () => {
             </div>
             <div className="pop-up-content">
                 <h1>We Demand Justice Virtual Concert</h1>
-                <h2>POSTPONED</h2>
-                <p>due to power outages caused by tropical storm Isaias</p>
-                <h3>New Date: AUG 16</h3>
+                <h2>TOMORROW</h2>
+                {/* <p>due to power outages caused by tropical storm Isaias</p> */}
+                <h3>AUG 16, 7:30 PM</h3>
+                <br/>
                 <div className="pop-up-btn">
                     <CustomButton onClick={() => {
                 window.open("https://www.fccfoundation.org/carefund")
