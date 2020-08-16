@@ -13,7 +13,7 @@ import Footer from './components/footer/footer.component'
 
 class App extends React.Component{
   render(){
-    const REDIRECT_URL = 'https://youtube.com'
+    const REDIRECT_URL = 'https://youtu.be/0pzdIxUXEME'
     return (
       <div>
         <Header />
