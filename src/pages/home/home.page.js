@@ -16,7 +16,7 @@ const HomePage = () => {
             </div>
             <div className="pop-up-content">
                 <h1>We Demand Justice Virtual Concert</h1>
-                <h2>TOMORROW</h2>
+                <h2>TONIGHT</h2>
                 {/* <p>due to power outages caused by tropical storm Isaias</p> */}
                 <h3>AUG 16, 7:30 PM</h3>
                 <br/>
