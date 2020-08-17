@@ -262,6 +262,11 @@
 }
 
 @media screen and (max-width: 400px){
+    iframe{
+        width: 80vw;
+        height: 30vh;
+    }
+
     #landing .title-container{
         top: -23vh;
     }
