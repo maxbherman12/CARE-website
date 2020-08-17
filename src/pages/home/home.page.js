@@ -10,23 +10,6 @@ const HomePage = () => {
     const [display, setDisplay] = useState(false);
     return(
     <div className="home" onLoad={()=>setTimeout(()=>setDisplay(!display), 3500)}>
-        <div className={`${display ? "pop-up" : "closed"}`}>
-            <div className="exit-btn" onClick={()=>setDisplay(!display)}>
-                X
-            </div>
-            <div className="pop-up-content">
-                <h1>We Demand Justice Virtual Concert</h1>
-                <h2>TONIGHT</h2>
-                {/* <p>due to power outages caused by tropical storm Isaias</p> */}
-                <h3>AUG 16, 7:30 PM</h3>
-                <br/>
-                <div className="pop-up-btn">
-                    <CustomButton onClick={() => {
-                window.open("https://www.fccfoundation.org/carefund")
-            }} altcolor>Buy Tickets</CustomButton>
-                </div>
-            </div>
-        </div>
         <div className="page" id='landing'>
             <div className="img-container">
                 <img src="https://images.unsplash.com/photo-1590945796812-e577d2d0f73d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt=""/>
@@ -52,9 +35,12 @@ const HomePage = () => {
             <div className="event-title">
                 <h1>We Demand Justice:<br />A Concert for #BlackLivesMatter</h1>
             </div>
-            <div className="event-details">
-                <p>Please join us for our virtual benefit concert on <strong>August 16th at 7:30pm</strong>, which will include performances from professional artists and Fairfield County teens as well as speeches from the leaders of our partnering organizations and community. Please make a donation of any size to be emailed a viewing link on the day of our event on our <Link to='/donate' className='home-link'>Donate page. </Link> To be notified with any updates regarding our event, <a className='home-link' href="https://docs.google.com/forms/d/e/1FAIpQLSfdU_PfSdNbhinxtIDkfdZgpgcnzmBLsb5OLq-Ek3OzsesIMw/viewform?usp=sf_link">subscribe to our email list!</a> </p>
+            <div className="video-player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pzdIxUXEME" frameborder="100px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            {/* <div className="event-details">
+                <p>Please join us for our virtual benefit concert on <strong>August 16th at 7:30pm</strong>, which will include performances from professional artists and Fairfield County teens as well as speeches from the leaders of our partnering organizations and community. Please make a donation of any size to be emailed a viewing link on the day of our event on our <Link to='/donate' className='home-link'>Donate page. </Link> To be notified with any updates regarding our event, <a className='home-link' href="https://docs.google.com/forms/d/e/1FAIpQLSfdU_PfSdNbhinxtIDkfdZgpgcnzmBLsb5OLq-Ek3OzsesIMw/viewform?usp=sf_link">subscribe to our email list!</a> </p>
+            </div> */}
             <div className="button">
                     <Anchor
                         to='howtohelp'

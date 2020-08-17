@@ -121,6 +121,10 @@
     margin: 10px;
 }
 
+.video-player{
+    margin: 1rem;
+}
+
 @keyframes fadeIn {
     from{
         opacity: 0;
